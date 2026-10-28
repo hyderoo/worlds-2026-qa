@@ -1,4 +1,4 @@
-# worlds-2026-qa
+# Worlds Live Quality Suite
 
 Automated end-to-end and API test suite for **Worlds 2026 Live**, a League of Legends Worlds tracker (https://worlds-2026-live.vercel.app). Black-box: it needs no application source and only reads the live site.
 

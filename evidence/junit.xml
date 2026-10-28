@@ -1,106 +1,106 @@
-<testsuites id="" name="" tests="120" failures="0" skipped="0" errors="0" time="87.769612">
-<testsuite name="api/contract.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="api" tests="9" failures="0" skipped="0" time="2.345" errors="0">
-<testcase name="API contract and data integrity › API-01 health endpoint reports a recent successful sync" classname="api/contract.spec.ts" time="0.292">
+<testsuites id="" name="" tests="120" failures="0" skipped="0" errors="0" time="87.288704">
+<testsuite name="api/contract.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="api" tests="9" failures="0" skipped="0" time="2.405" errors="0">
+<testcase name="API contract and data integrity › API-01 health endpoint reports a recent successful sync" classname="api/contract.spec.ts" time="0.277">
 </testcase>
-<testcase name="API contract and data integrity › API-02 snapshot matches the documented schema" classname="api/contract.spec.ts" time="0.335">
+<testcase name="API contract and data integrity › API-02 snapshot matches the documented schema" classname="api/contract.spec.ts" time="0.278">
 </testcase>
-<testcase name="API contract and data integrity › API-03 snapshot supports CORS and conditional requests (ETag)" classname="api/contract.spec.ts" time="0.466">
+<testcase name="API contract and data integrity › API-03 snapshot supports CORS and conditional requests (ETag)" classname="api/contract.spec.ts" time="0.368">
 </testcase>
-<testcase name="API contract and data integrity › API-04 match data is internally consistent" classname="api/contract.spec.ts" time="0.114">
+<testcase name="API contract and data integrity › API-04 match data is internally consistent" classname="api/contract.spec.ts" time="0.282">
 </testcase>
-<testcase name="API contract and data integrity › API-05 series formats follow the tournament rules (Swiss Bo1 or Bo3, Play-Ins Bo5)" classname="api/contract.spec.ts" time="0.137">
+<testcase name="API contract and data integrity › API-05 series formats follow the tournament rules (Swiss Bo1 or Bo3, Play-Ins Bo5)" classname="api/contract.spec.ts" time="0.121">
 </testcase>
-<testcase name="API contract and data integrity › API-06 calendar feed is a valid iCalendar with one event per match with a known team" classname="api/contract.spec.ts" time="0.108">
+<testcase name="API contract and data integrity › API-06 calendar feed is a valid iCalendar with one event per match with a known team" classname="api/contract.spec.ts" time="0.118">
 </testcase>
-<testcase name="API contract and data integrity › API-07 security headers are set on the HTML shell" classname="api/contract.spec.ts" time="0.237">
+<testcase name="API contract and data integrity › API-07 security headers are set on the HTML shell" classname="api/contract.spec.ts" time="0.287">
 </testcase>
-<testcase name="API contract and data integrity › API-08 protected endpoints reject anonymous callers" classname="api/contract.spec.ts" time="0.364">
+<testcase name="API contract and data integrity › API-08 protected endpoints reject anonymous callers" classname="api/contract.spec.ts" time="0.421">
 </testcase>
-<testcase name="API contract and data integrity › API-09 unknown routes return a real 404" classname="api/contract.spec.ts" time="0.292">
+<testcase name="API contract and data integrity › API-09 unknown routes return a real 404" classname="api/contract.spec.ts" time="0.253">
 </testcase>
 </testsuite>
-<testsuite name="api/negative.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="api" tests="10" failures="0" skipped="0" time="1.637" errors="0">
-<testcase name="API: more positive and negative cases › API-10 team directory has unique codes and a roster for each team" classname="api/negative.spec.ts" time="0.096">
+<testsuite name="api/negative.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="api" tests="10" failures="0" skipped="0" time="1.434" errors="0">
+<testcase name="API: more positive and negative cases › API-10 team directory has unique codes and a roster for each team" classname="api/negative.spec.ts" time="0.092">
 </testcase>
-<testcase name="API: more positive and negative cases › API-11 every match references teams that exist in the directory (or TBD)" classname="api/negative.spec.ts" time="0.103">
+<testcase name="API: more positive and negative cases › API-11 every match references teams that exist in the directory (or TBD)" classname="api/negative.spec.ts" time="0.147">
 </testcase>
-<testcase name="API: more positive and negative cases › API-12 the snapshot is read-only: POST is rejected" classname="api/negative.spec.ts" time="0.198">
+<testcase name="API: more positive and negative cases › API-12 the snapshot is read-only: POST is rejected" classname="api/negative.spec.ts" time="0.145">
 </testcase>
 <testcase name="API: more positive and negative cases › API-13 CORS preflight is answered for GET with If-None-Match" classname="api/negative.spec.ts" time="0.164">
 </testcase>
-<testcase name="API: more positive and negative cases › API-14 calendar events have a start, a later end and a stable UID" classname="api/negative.spec.ts" time="0.155">
+<testcase name="API: more positive and negative cases › API-14 calendar events have a start, a later end and a stable UID" classname="api/negative.spec.ts" time="0.106">
 </testcase>
-<testcase name="API: more positive and negative cases › API-15 calendar entries do not leak final scores" classname="api/negative.spec.ts" time="0.121">
+<testcase name="API: more positive and negative cases › API-15 calendar entries do not leak final scores" classname="api/negative.spec.ts" time="0.088">
 </testcase>
-<testcase name="API: more positive and negative cases › API-16 unknown API paths do not expose a stack trace" classname="api/negative.spec.ts" time="0.288">
+<testcase name="API: more positive and negative cases › API-16 unknown API paths do not expose a stack trace" classname="api/negative.spec.ts" time="0.218">
 </testcase>
-<testcase name="API: more positive and negative cases › API-17 sync endpoint rejects a wrong secret" classname="api/negative.spec.ts" time="0.164">
+<testcase name="API: more positive and negative cases › API-17 sync endpoint rejects a wrong secret" classname="api/negative.spec.ts" time="0.181">
 </testcase>
-<testcase name="API: more positive and negative cases › API-18 robots and sitemap are served" classname="api/negative.spec.ts" time="0.275">
+<testcase name="API: more positive and negative cases › API-18 robots and sitemap are served" classname="api/negative.spec.ts" time="0.223">
 </testcase>
-<testcase name="API: more positive and negative cases › API-19 web manifest is valid for installation" classname="api/negative.spec.ts" time="0.073">
+<testcase name="API: more positive and negative cases › API-19 web manifest is valid for installation" classname="api/negative.spec.ts" time="0.07">
 </testcase>
 </testsuite>
-<testsuite name="e2e/filters-and-pages.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="desktop-chrome" tests="48" failures="0" skipped="0" time="108.574" errors="0">
-<testcase name="Match filters: positive paths › MC-10 each status filter shows only that status and its count matches the list" classname="e2e/filters-and-pages.spec.ts" time="4.652">
+<testsuite name="e2e/filters-and-pages.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="desktop-chrome" tests="48" failures="0" skipped="0" time="108.324" errors="0">
+<testcase name="Match filters: positive paths › MC-10 each status filter shows only that status and its count matches the list" classname="e2e/filters-and-pages.spec.ts" time="3.99">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-d5e12--its-count-matches-the-list-desktop-chrome/attachments/MC-10-completed-d6bce0c27049a4cf930aff8c0a03d382029330e8.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: positive paths › MC-11 date filter keeps only that day" classname="e2e/filters-and-pages.spec.ts" time="3.05">
+<testcase name="Match filters: positive paths › MC-11 date filter keeps only that day" classname="e2e/filters-and-pages.spec.ts" time="2.859">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-86e32--filter-keeps-only-that-day-desktop-chrome/attachments/MC-11-6774328625ec9d18cd9aa3bc56022151a78fb404.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: positive paths › MC-12 region filter returns only series with a team from that region" classname="e2e/filters-and-pages.spec.ts" time="3.198">
+<testcase name="Match filters: positive paths › MC-12 region filter returns only series with a team from that region" classname="e2e/filters-and-pages.spec.ts" time="3.554">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-afc22-ith-a-team-from-that-region-desktop-chrome/attachments/MC-12-9d0b5061fc7ab0be8a69a45a0a5aae57f997c707.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: positive paths › MC-13 calendar view switch is reflected in the URL and keeps the list" classname="e2e/filters-and-pages.spec.ts" time="3.153">
+<testcase name="Match filters: positive paths › MC-13 calendar view switch is reflected in the URL and keeps the list" classname="e2e/filters-and-pages.spec.ts" time="2.817">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-fbf25--the-URL-and-keeps-the-list-desktop-chrome/attachments/MC-13-7be1b0a51995e4897804c254e70ed81e059ff4af.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: positive paths › MC-14 combined stage and team filters narrow together" classname="e2e/filters-and-pages.spec.ts" time="2.942">
+<testcase name="Match filters: positive paths › MC-14 combined stage and team filters narrow together" classname="e2e/filters-and-pages.spec.ts" time="2.874">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-01 a date with no matches shows guidance, not a blank page" classname="e2e/filters-and-pages.spec.ts" time="1.968">
+<testcase name="Match filters: negative and edge paths › NG-01 a date with no matches shows guidance, not a blank page" classname="e2e/filters-and-pages.spec.ts" time="1.796">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-799af-s-guidance-not-a-blank-page-desktop-chrome/attachments/NG-01-7ae931bc7cf8ff8cabc42da5f3d46e892288fb8d.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-02 an unknown stage in the URL does not crash the page" classname="e2e/filters-and-pages.spec.ts" time="1.938">
+<testcase name="Match filters: negative and edge paths › NG-02 an unknown stage in the URL does not crash the page" classname="e2e/filters-and-pages.spec.ts" time="1.455">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-03 a malformed date in the URL does not crash the page" classname="e2e/filters-and-pages.spec.ts" time="1.932">
+<testcase name="Match filters: negative and edge paths › NG-03 a malformed date in the URL does not crash the page" classname="e2e/filters-and-pages.spec.ts" time="1.728">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-04 markup typed into search is shown as text and never executed" classname="e2e/filters-and-pages.spec.ts" time="2.928">
+<testcase name="Match filters: negative and edge paths › NG-04 markup typed into search is shown as text and never executed" classname="e2e/filters-and-pages.spec.ts" time="2.454">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-05 a very long search string is handled" classname="e2e/filters-and-pages.spec.ts" time="2.899">
+<testcase name="Match filters: negative and edge paths › NG-05 a very long search string is handled" classname="e2e/filters-and-pages.spec.ts" time="2.387">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-06 My teams with nothing followed shows an empty state" classname="e2e/filters-and-pages.spec.ts" time="2.752">
+<testcase name="Match filters: negative and edge paths › NG-06 My teams with nothing followed shows an empty state" classname="e2e/filters-and-pages.spec.ts" time="2.354">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-07 an unknown team code returns a real 404 page" classname="e2e/filters-and-pages.spec.ts" time="0.895">
+<testcase name="Match filters: negative and edge paths › NG-07 an unknown team code returns a real 404 page" classname="e2e/filters-and-pages.spec.ts" time="1.39">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/filters-and-pages-Match-fi-f9bc9-ode-returns-a-real-404-page-desktop-chrome/attachments/NG-07-9362eff574cfdfeeacb1ec16ab68c513460a549d.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-08 corrupted saved preferences fall back to defaults" classname="e2e/filters-and-pages.spec.ts" time="1.606">
+<testcase name="Match filters: negative and edge paths › NG-08 corrupted saved preferences fall back to defaults" classname="e2e/filters-and-pages.spec.ts" time="1.698">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-09 an unknown saved language falls back without showing raw translation keys" classname="e2e/filters-and-pages.spec.ts" time="2.475">
+<testcase name="Match filters: negative and edge paths › NG-09 an unknown saved language falls back without showing raw translation keys" classname="e2e/filters-and-pages.spec.ts" time="2.568">
 </testcase>
-<testcase name="Match filters: negative and edge paths › NG-10 an unknown saved time zone still renders kickoff times (known issue BUG-005)" classname="e2e/filters-and-pages.spec.ts" time="12.512">
+<testcase name="Match filters: negative and edge paths › NG-10 an unknown saved time zone still renders kickoff times (known issue BUG-005)" classname="e2e/filters-and-pages.spec.ts" time="12.429">
 <properties>
 <property name="fail" value="BUG-005 unknown saved time zone crashes the app into the error boundary">
 </property>
@@ -111,111 +111,111 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Every public route renders › RT-01 / responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.224">
+<testcase name="Every public route renders › RT-01 / responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.3">
 </testcase>
-<testcase name="Every public route renders › RT-02 /matches responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.953">
+<testcase name="Every public route renders › RT-02 /matches responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.042">
 </testcase>
-<testcase name="Every public route renders › RT-03 /standings responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.072">
+<testcase name="Every public route renders › RT-03 /standings responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.137">
 </testcase>
-<testcase name="Every public route renders › RT-04 /predictor responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.018">
+<testcase name="Every public route renders › RT-04 /predictor responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.138">
 </testcase>
-<testcase name="Every public route renders › RT-05 /teams responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.112">
+<testcase name="Every public route renders › RT-05 /teams responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.05">
 </testcase>
-<testcase name="Every public route renders › RT-06 /teams/T1 responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.117">
+<testcase name="Every public route renders › RT-06 /teams/T1 responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.136">
 </testcase>
-<testcase name="Every public route renders › RT-07 /today responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.953">
+<testcase name="Every public route renders › RT-07 /today responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.1">
 </testcase>
-<testcase name="Every public route renders › RT-08 /about responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.991">
+<testcase name="Every public route renders › RT-08 /about responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.939">
 </testcase>
-<testcase name="Every public route renders › RT-09 /compare responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.831">
+<testcase name="Every public route renders › RT-09 /compare responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.865">
 </testcase>
-<testcase name="Every public route renders › RT-10 /daily responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.017">
+<testcase name="Every public route renders › RT-10 /daily responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.977">
 </testcase>
-<testcase name="Every public route renders › RT-11 /groups responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.982">
+<testcase name="Every public route renders › RT-11 /groups responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1">
 </testcase>
-<testcase name="Every public route renders › RT-12 /recaps responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.134">
+<testcase name="Every public route renders › RT-12 /recaps responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.075">
 </testcase>
-<testcase name="Every public route renders › RT-13 /stats responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.02">
+<testcase name="Every public route renders › RT-13 /stats responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="1.018">
 </testcase>
-<testcase name="Every public route renders › RT-14 /predictions responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.975">
+<testcase name="Every public route renders › RT-14 /predictions responds 200 with its heading" classname="e2e/filters-and-pages.spec.ts" time="0.844">
 </testcase>
-<testcase name="Each language loads › LG-03 Bahasa Indonesia sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.891">
+<testcase name="Each language loads › LG-03 Bahasa Indonesia sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.994">
 </testcase>
-<testcase name="Each language loads › LG-04 Bahasa Melayu sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.659">
+<testcase name="Each language loads › LG-04 Bahasa Melayu sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.719">
 </testcase>
-<testcase name="Each language loads › LG-05 日本語 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.815">
+<testcase name="Each language loads › LG-05 日本語 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.912">
 </testcase>
-<testcase name="Each language loads › LG-06 한국어 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.989">
+<testcase name="Each language loads › LG-06 한국어 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="1.968">
 </testcase>
-<testcase name="Each language loads › LG-07 中文 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.325">
+<testcase name="Each language loads › LG-07 中文 sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.663">
 </testcase>
-<testcase name="Each language loads › LG-08 Français sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.321">
+<testcase name="Each language loads › LG-08 Français sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.981">
 </testcase>
-<testcase name="Each language loads › LG-09 Español sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.342">
+<testcase name="Each language loads › LG-09 Español sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.448">
 </testcase>
-<testcase name="Each language loads › LG-10 Português sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.519">
+<testcase name="Each language loads › LG-10 Português sets the document language and shows no raw keys" classname="e2e/filters-and-pages.spec.ts" time="2.545">
 </testcase>
-<testcase name="Each time zone option › TZ-03 WITA (Makassar) labels kickoff times and is stored as Asia/Makassar" classname="e2e/filters-and-pages.spec.ts" time="2.461">
+<testcase name="Each time zone option › TZ-03 WITA (Makassar) labels kickoff times and is stored as Asia/Makassar" classname="e2e/filters-and-pages.spec.ts" time="3.032">
 </testcase>
-<testcase name="Each time zone option › TZ-04 WIT (Jayapura) labels kickoff times and is stored as Asia/Jayapura" classname="e2e/filters-and-pages.spec.ts" time="2.728">
+<testcase name="Each time zone option › TZ-04 WIT (Jayapura) labels kickoff times and is stored as Asia/Jayapura" classname="e2e/filters-and-pages.spec.ts" time="2.825">
 </testcase>
-<testcase name="Each time zone option › TZ-05 SGT (Singapore) labels kickoff times and is stored as Asia/Singapore" classname="e2e/filters-and-pages.spec.ts" time="2.335">
+<testcase name="Each time zone option › TZ-05 SGT (Singapore) labels kickoff times and is stored as Asia/Singapore" classname="e2e/filters-and-pages.spec.ts" time="2.445">
 </testcase>
-<testcase name="Each time zone option › TZ-06 KST (Seoul) labels kickoff times and is stored as Asia/Seoul" classname="e2e/filters-and-pages.spec.ts" time="2.424">
+<testcase name="Each time zone option › TZ-06 KST (Seoul) labels kickoff times and is stored as Asia/Seoul" classname="e2e/filters-and-pages.spec.ts" time="2.751">
 </testcase>
-<testcase name="Each time zone option › TZ-07 UTC labels kickoff times and is stored as UTC" classname="e2e/filters-and-pages.spec.ts" time="2.549">
+<testcase name="Each time zone option › TZ-07 UTC labels kickoff times and is stored as UTC" classname="e2e/filters-and-pages.spec.ts" time="2.669">
 </testcase>
-<testcase name="Each time zone option › TZ-08 ET (New York) labels kickoff times and is stored as America/New_York" classname="e2e/filters-and-pages.spec.ts" time="2.583">
+<testcase name="Each time zone option › TZ-08 ET (New York) labels kickoff times and is stored as America/New_York" classname="e2e/filters-and-pages.spec.ts" time="2.431">
 </testcase>
-<testcase name="Each time zone option › TZ-09 PT (Los Angeles) labels kickoff times and is stored as America/Los_Angeles" classname="e2e/filters-and-pages.spec.ts" time="2.468">
+<testcase name="Each time zone option › TZ-09 PT (Los Angeles) labels kickoff times and is stored as America/Los_Angeles" classname="e2e/filters-and-pages.spec.ts" time="2.496">
 </testcase>
-<testcase name="Each time zone option › TZ-10 Los Angeles is 14 hours behind Jakarta for an October kickoff" classname="e2e/filters-and-pages.spec.ts" time="2.512">
+<testcase name="Each time zone option › TZ-10 Los Angeles is 14 hours behind Jakarta for an October kickoff" classname="e2e/filters-and-pages.spec.ts" time="2.695">
 </testcase>
-<testcase name="Keyboard and dialogs › KB-01 the skip link is the first tab stop and moves focus to the content" classname="e2e/filters-and-pages.spec.ts" time="2.836">
+<testcase name="Keyboard and dialogs › KB-01 the skip link is the first tab stop and moves focus to the content" classname="e2e/filters-and-pages.spec.ts" time="2.412">
 </testcase>
-<testcase name="Keyboard and dialogs › KB-02 Escape closes the settings dialog" classname="e2e/filters-and-pages.spec.ts" time="2.589">
+<testcase name="Keyboard and dialogs › KB-02 Escape closes the settings dialog" classname="e2e/filters-and-pages.spec.ts" time="2.758">
 </testcase>
-<testcase name="Keyboard and dialogs › KB-03 the search palette finds nothing for gibberish and stays usable" classname="e2e/filters-and-pages.spec.ts" time="2.929">
+<testcase name="Keyboard and dialogs › KB-03 the search palette finds nothing for gibberish and stays usable" classname="e2e/filters-and-pages.spec.ts" time="2.606">
 </testcase>
 </testsuite>
-<testsuite name="e2e/matches.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="desktop-chrome" tests="13" failures="0" skipped="0" time="33.739" errors="0">
-<testcase name="Match center › MC-01 lists every series and shows a count @smoke @mobile" classname="e2e/matches.spec.ts" time="2.452">
+<testsuite name="e2e/matches.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="desktop-chrome" tests="13" failures="0" skipped="0" time="35.187" errors="0">
+<testcase name="Match center › MC-01 lists every series and shows a count @smoke @mobile" classname="e2e/matches.spec.ts" time="2.669">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-desktop-chrome/attachments/MC-01-bdda25e016628061a0eaa204b3eac8515bd5cfd0.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match center › MC-02 stage filter narrows the list and is reflected in the URL" classname="e2e/matches.spec.ts" time="2.999">
+<testcase name="Match center › MC-02 stage filter narrows the list and is reflected in the URL" classname="e2e/matches.spec.ts" time="2.578">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-02-b0957-and-is-reflected-in-the-URL-desktop-chrome/attachments/MC-02-7283df8d83b43876f3bb9332d22b965db267ea32.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match center › MC-03 filtered views can be shared by URL" classname="e2e/matches.spec.ts" time="2.974">
+<testcase name="Match center › MC-03 filtered views can be shared by URL" classname="e2e/matches.spec.ts" time="3.2">
 </testcase>
-<testcase name="Match center › MC-04 team search finds only that team&apos;s series" classname="e2e/matches.spec.ts" time="2.734">
+<testcase name="Match center › MC-04 team search finds only that team&apos;s series" classname="e2e/matches.spec.ts" time="2.299">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-04-abb90-nds-only-that-team-s-series-desktop-chrome/attachments/MC-04-5b3fdb0a134efac6f7f81a0c1d461cfc80b204aa.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match center › MC-05 a search with no result shows an empty count instead of a crash" classname="e2e/matches.spec.ts" time="2.496">
+<testcase name="Match center › MC-05 a search with no result shows an empty count instead of a crash" classname="e2e/matches.spec.ts" time="2.684">
 </testcase>
-<testcase name="Match center › MC-06 reset restores the full list" classname="e2e/matches.spec.ts" time="2.382">
+<testcase name="Match center › MC-06 reset restores the full list" classname="e2e/matches.spec.ts" time="2.356">
 </testcase>
-<testcase name="Match center › MC-07 a series opens its detail page with both teams" classname="e2e/matches.spec.ts" time="2.935">
+<testcase name="Match center › MC-07 a series opens its detail page with both teams" classname="e2e/matches.spec.ts" time="3.106">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-07-a9a95-detail-page-with-both-teams-desktop-chrome/attachments/MC-07-5a0263cd96b600fbe3c0c23e8d8fd349eaceadc8.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match center › MC-08 invalid match id shows a not-found message with a way back" classname="e2e/matches.spec.ts" time="1.102">
+<testcase name="Match center › MC-08 invalid match id shows a not-found message with a way back" classname="e2e/matches.spec.ts" time="1.261">
 </testcase>
-<testcase name="Match center › MC-08b invalid match id responds with HTTP 404 (known issue BUG-002)" classname="e2e/matches.spec.ts" time="1.205">
+<testcase name="Match center › MC-08b invalid match id responds with HTTP 404 (known issue BUG-002)" classname="e2e/matches.spec.ts" time="1.513">
 <properties>
 <property name="fail" value="BUG-002 soft 404 on /matches/&lt;unknown id&gt;">
 </property>
@@ -226,96 +226,96 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Preferences › TZ-01 changing the time zone shifts every kickoff time consistently" classname="e2e/matches.spec.ts" time="2.81">
+<testcase name="Preferences › TZ-01 changing the time zone shifts every kickoff time consistently" classname="e2e/matches.spec.ts" time="2.58">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Preferences-TZ-01--de07b-y-kickoff-time-consistently-desktop-chrome/attachments/TZ-01-9112f69a9c45d367b1b8596735dca3ba8d8a4bf4.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Preferences › TZ-02 the chosen time zone survives a reload" classname="e2e/matches.spec.ts" time="3.694">
+<testcase name="Preferences › TZ-02 the chosen time zone survives a reload" classname="e2e/matches.spec.ts" time="4.235">
 </testcase>
-<testcase name="Preferences › LG-01 switching language translates the interface and persists" classname="e2e/matches.spec.ts" time="3.85">
+<testcase name="Preferences › LG-01 switching language translates the interface and persists" classname="e2e/matches.spec.ts" time="3.88">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Preferences-LG-01--2411d--the-interface-and-persists-desktop-chrome/attachments/LG-01-cf550d93d97a507a5de64555c6f39dced3c4a5ab.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Preferences › LG-02 team names are not translated" classname="e2e/matches.spec.ts" time="2.106">
+<testcase name="Preferences › LG-02 team names are not translated" classname="e2e/matches.spec.ts" time="2.826">
 </testcase>
 </testsuite>
-<testsuite name="e2e/predictor.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="desktop-chrome" tests="11" failures="0" skipped="0" time="24.65" errors="0">
-<testcase name="Swiss predictor › PR-01 round 1 shows eight official pairings @smoke @mobile" classname="e2e/predictor.spec.ts" time="2.147">
+<testsuite name="e2e/predictor.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="desktop-chrome" tests="11" failures="0" skipped="0" time="22.381" errors="0">
+<testcase name="Swiss predictor › PR-01 round 1 shows eight official pairings @smoke @mobile" classname="e2e/predictor.spec.ts" time="1.897">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-desktop-chrome/attachments/PR-01-ebb9fc2d0ef4255dba0f8b630eb9811ffb7266f4.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Swiss predictor › PR-02 picking a winner marks exactly that team as pressed" classname="e2e/predictor.spec.ts" time="2.564">
+<testcase name="Swiss predictor › PR-02 picking a winner marks exactly that team as pressed" classname="e2e/predictor.spec.ts" time="2.066">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/predictor-Swiss-predictor--f79a0-xactly-that-team-as-pressed-desktop-chrome/attachments/PR-02-db01b87c95e0815174f6b2591a5f5fdbe1aa9cfe.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Swiss predictor › PR-03 predictions persist across reload (browser only)" classname="e2e/predictor.spec.ts" time="3.336">
+<testcase name="Swiss predictor › PR-03 predictions persist across reload (browser only)" classname="e2e/predictor.spec.ts" time="2.457">
 </testcase>
-<testcase name="Swiss predictor › PR-04 reset asks for confirmation and clears picks" classname="e2e/predictor.spec.ts" time="2.626">
+<testcase name="Swiss predictor › PR-04 reset asks for confirmation and clears picks" classname="e2e/predictor.spec.ts" time="2.03">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/predictor-Swiss-predictor--9f5b9-nfirmation-and-clears-picks-desktop-chrome/attachments/PR-04-e0c90d360e5bd69d74c688c72606f8823207aa14.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Swiss predictor › PR-05 dismissing the reset dialog keeps the picks" classname="e2e/predictor.spec.ts" time="2.231">
+<testcase name="Swiss predictor › PR-05 dismissing the reset dialog keeps the picks" classname="e2e/predictor.spec.ts" time="2.299">
 </testcase>
-<testcase name="Swiss predictor › PR-06 later rounds are built from official pairings, not from picks" classname="e2e/predictor.spec.ts" time="1.729">
+<testcase name="Swiss predictor › PR-06 later rounds are built from official pairings, not from picks" classname="e2e/predictor.spec.ts" time="1.949">
 </testcase>
-<testcase name="Swiss predictor › PR-07 knockout tab shows the three knockout rounds" classname="e2e/predictor.spec.ts" time="2.009">
+<testcase name="Swiss predictor › PR-07 knockout tab shows the three knockout rounds" classname="e2e/predictor.spec.ts" time="2.092">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/predictor-Swiss-predictor--6210a-s-the-three-knockout-rounds-desktop-chrome/attachments/PR-07-4ca95a9341454ed8a5fde481eb844263aee236d9.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Swiss predictor › PR-08 picks never write to the shared database (local only)" classname="e2e/predictor.spec.ts" time="2.762">
+<testcase name="Swiss predictor › PR-08 picks never write to the shared database (local only)" classname="e2e/predictor.spec.ts" time="2.384">
 </testcase>
-<testcase name="Swiss predictor: more behaviour › PR-09 clicking a chosen winner again clears the pick" classname="e2e/predictor.spec.ts" time="1.706">
+<testcase name="Swiss predictor: more behaviour › PR-09 clicking a chosen winner again clears the pick" classname="e2e/predictor.spec.ts" time="1.632">
 </testcase>
-<testcase name="Swiss predictor: more behaviour › PR-10 official pairings cannot be removed" classname="e2e/predictor.spec.ts" time="1.699">
+<testcase name="Swiss predictor: more behaviour › PR-10 official pairings cannot be removed" classname="e2e/predictor.spec.ts" time="1.755">
 </testcase>
-<testcase name="Swiss predictor: more behaviour › PR-11 knockout slots without teams cannot be picked" classname="e2e/predictor.spec.ts" time="1.841">
+<testcase name="Swiss predictor: more behaviour › PR-11 knockout slots without teams cannot be picked" classname="e2e/predictor.spec.ts" time="1.82">
 </testcase>
 </testsuite>
-<testsuite name="e2e/spoiler.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="desktop-chrome" tests="9" failures="0" skipped="0" time="24.282" errors="0">
-<testcase name="Spoiler-free mode › SP-01 results are visible by default and nothing asks to be revealed" classname="e2e/spoiler.spec.ts" time="2.286">
+<testsuite name="e2e/spoiler.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="desktop-chrome" tests="9" failures="0" skipped="0" time="24.441" errors="0">
+<testcase name="Spoiler-free mode › SP-01 results are visible by default and nothing asks to be revealed" classname="e2e/spoiler.spec.ts" time="2.527">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/spoiler-Spoiler-free-mode--d270c-nothing-asks-to-be-revealed-desktop-chrome/attachments/SP-01-0ba038d7897fc76e6cc1fd525740f05536fe6cf3.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Spoiler-free mode › SP-02 enabling spoiler-free hides scores and offers a per-match reveal" classname="e2e/spoiler.spec.ts" time="2.428">
+<testcase name="Spoiler-free mode › SP-02 enabling spoiler-free hides scores and offers a per-match reveal" classname="e2e/spoiler.spec.ts" time="2.448">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/spoiler-Spoiler-free-mode--3cc39-d-offers-a-per-match-reveal-desktop-chrome/attachments/SP-02-37d06f99cd74325c00180155be5efd5f8b4439f5.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Spoiler-free mode › SP-03 the setting persists after reload" classname="e2e/spoiler.spec.ts" time="3.069">
+<testcase name="Spoiler-free mode › SP-03 the setting persists after reload" classname="e2e/spoiler.spec.ts" time="2.747">
 </testcase>
-<testcase name="Spoiler-free mode › SP-04 revealing one match leaves every other match hidden" classname="e2e/spoiler.spec.ts" time="2.362">
+<testcase name="Spoiler-free mode › SP-04 revealing one match leaves every other match hidden" classname="e2e/spoiler.spec.ts" time="2.446">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/spoiler-Spoiler-free-mode--19675-es-every-other-match-hidden-desktop-chrome/attachments/SP-04-f5b717b37d987cccdba3511fa4909a1988775487.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Spoiler-free mode › SP-05 a revealed match stays revealed after reload" classname="e2e/spoiler.spec.ts" time="2.938">
+<testcase name="Spoiler-free mode › SP-05 a revealed match stays revealed after reload" classname="e2e/spoiler.spec.ts" time="3.308">
 </testcase>
-<testcase name="Spoiler-free mode › SP-06 the standings page hides results and can be shown for the session only" classname="e2e/spoiler.spec.ts" time="2.906">
+<testcase name="Spoiler-free mode › SP-06 the standings page hides results and can be shown for the session only" classname="e2e/spoiler.spec.ts" time="2.822">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-hidden-c2dab9e96a7bc825bce731f6fb46d81116cc6bb7.png]]
@@ -324,16 +324,16 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Spoiler-free mode › SP-07 turning spoiler-free off restores scores" classname="e2e/spoiler.spec.ts" time="2.471">
+<testcase name="Spoiler-free mode › SP-07 turning spoiler-free off restores scores" classname="e2e/spoiler.spec.ts" time="2.754">
 </testcase>
-<testcase name="Spoiler-free mode › SP-08 the match detail page does not leak the result when spoiler-free is on" classname="e2e/spoiler.spec.ts" time="2.619">
+<testcase name="Spoiler-free mode › SP-08 the match detail page does not leak the result when spoiler-free is on" classname="e2e/spoiler.spec.ts" time="2.402">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/spoiler-Spoiler-free-mode--35aa7-ult-when-spoiler-free-is-on-desktop-chrome/attachments/SP-08-0a35705a34687067e3f743cc276ca9cfb9c9e383.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Spoiler-free mode: first paint › SP-09 scores are never painted while spoiler-free is on (known issue BUG-004)" classname="e2e/spoiler.spec.ts" time="3.203">
+<testcase name="Spoiler-free mode: first paint › SP-09 scores are never painted while spoiler-free is on (known issue BUG-004)" classname="e2e/spoiler.spec.ts" time="2.987">
 <properties>
 <property name="fail" value="BUG-004 flash of scores before spoiler-free applies">
 </property>
@@ -345,80 +345,80 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e/standings-nav.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="desktop-chrome" tests="15" failures="0" skipped="0" time="42.121" errors="0">
-<testcase name="Standings and bracket › ST-01 standings page renders stage tabs @smoke @mobile" classname="e2e/standings-nav.spec.ts" time="2.085">
+<testsuite name="e2e/standings-nav.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="desktop-chrome" tests="15" failures="0" skipped="0" time="43.151" errors="0">
+<testcase name="Standings and bracket › ST-01 standings page renders stage tabs @smoke @mobile" classname="e2e/standings-nav.spec.ts" time="2.181">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-desktop-chrome/attachments/ST-01-a7e1351f9bd1b799d75a62b8c2db74a3169da0ff.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Standings and bracket › ST-02 Swiss view shows the bracket and the record board" classname="e2e/standings-nav.spec.ts" time="2.234">
+<testcase name="Standings and bracket › ST-02 Swiss view shows the bracket and the record board" classname="e2e/standings-nav.spec.ts" time="2.421">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Standings-an-063ac-racket-and-the-record-board-desktop-chrome/attachments/ST-02-710f5febe58bf750fc2b070466179a79ba255c89.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Standings and bracket › ST-03 Swiss record board only has legal records" classname="e2e/standings-nav.spec.ts" time="2.07">
+<testcase name="Standings and bracket › ST-03 Swiss record board only has legal records" classname="e2e/standings-nav.spec.ts" time="2.629">
 </testcase>
-<testcase name="Standings and bracket › ST-04 Knockouts view renders without error" classname="e2e/standings-nav.spec.ts" time="2.31">
+<testcase name="Standings and bracket › ST-04 Knockouts view renders without error" classname="e2e/standings-nav.spec.ts" time="2.668">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Standings-an-21688--view-renders-without-error-desktop-chrome/attachments/ST-04-6d2b8b32606d494394f4719ad4e4975b28331c4c.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Standings and bracket › ST-05 zoom controls change the bracket scale within limits" classname="e2e/standings-nav.spec.ts" time="3.417">
+<testcase name="Standings and bracket › ST-05 zoom controls change the bracket scale within limits" classname="e2e/standings-nav.spec.ts" time="3.112">
 </testcase>
-<testcase name="Navigation, search and resilience › NV-01 primary navigation reaches the main sections @smoke" classname="e2e/standings-nav.spec.ts" time="2.151">
+<testcase name="Navigation, search and resilience › NV-01 primary navigation reaches the main sections @smoke" classname="e2e/standings-nav.spec.ts" time="2.367">
 </testcase>
-<testcase name="Navigation, search and resilience › NV-02 command palette opens with Ctrl+K and finds a team" classname="e2e/standings-nav.spec.ts" time="3.154">
+<testcase name="Navigation, search and resilience › NV-02 command palette opens with Ctrl+K and finds a team" classname="e2e/standings-nav.spec.ts" time="3.037">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Navigation-s-54a44-ith-Ctrl-K-and-finds-a-team-desktop-chrome/attachments/NV-02-14ffa2e92d1d3e5949714b4bdc4b77ac19a7bd80.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Navigation, search and resilience › NV-03 unknown page shows the branded 404 with a way back" classname="e2e/standings-nav.spec.ts" time="1.451">
+<testcase name="Navigation, search and resilience › NV-03 unknown page shows the branded 404 with a way back" classname="e2e/standings-nav.spec.ts" time="1.487">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Navigation-s-86e5d-branded-404-with-a-way-back-desktop-chrome/attachments/NV-03-37833bbc2f4e6babb0704e12965ddf7aa34ba816.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Navigation, search and resilience › NV-04 team profile opens from the teams index" classname="e2e/standings-nav.spec.ts" time="2.787">
+<testcase name="Navigation, search and resilience › NV-04 team profile opens from the teams index" classname="e2e/standings-nav.spec.ts" time="2.95">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Navigation-s-d8212--opens-from-the-teams-index-desktop-chrome/attachments/NV-04-aab227b0802f9c72241960350996319dff9fc240.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Navigation, search and resilience › NV-06 the app survives an upstream API failure with cached or empty state, not a blank page" classname="e2e/standings-nav.spec.ts" time="2.417">
+<testcase name="Navigation, search and resilience › NV-06 the app survives an upstream API failure with cached or empty state, not a blank page" classname="e2e/standings-nav.spec.ts" time="2.491">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Navigation-s-922e1-mpty-state-not-a-blank-page-desktop-chrome/attachments/NV-06-f3b6b0dcfe06c3b4f47a2febc3ad50a2d89e245f.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Navigation, search and resilience › NV-07 no console errors on the home page (known issue BUG-001)" classname="e2e/standings-nav.spec.ts" time="2.271">
+<testcase name="Navigation, search and resilience › NV-07 no console errors on the home page for a non-UTC visitor (known issue BUG-001)" classname="e2e/standings-nav.spec.ts" time="2.298">
 <properties>
-<property name="fail" value="BUG-001 React hydration error #418 on /">
+<property name="fail" value="BUG-001 React hydration error #418 on / when the browser time zone is not UTC">
 </property>
 </properties>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/standings-nav-Navigation-s-34e61-e-page-known-issue-BUG-001--desktop-chrome/error-context.md]]
+[[ATTACHMENT|../test-results/standings-nav-Navigation-s-6fce0-isitor-known-issue-BUG-001--desktop-chrome/error-context.md]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-01 / has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="3.542">
+<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-01 / has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="3.472">
 </testcase>
-<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-02 /matches has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="4.533">
+<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-02 /matches has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="4.298">
 </testcase>
-<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-03 /standings has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="3.865">
+<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-03 /standings has no serious or critical violations" classname="e2e/standings-nav.spec.ts" time="3.925">
 </testcase>
-<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-04 /predictor has no serious or critical violations (known issue BUG-003)" classname="e2e/standings-nav.spec.ts" time="3.834">
+<testcase name="Accessibility (axe-core, WCAG 2 A/AA) › AX-04 /predictor has no serious or critical violations (known issue BUG-003)" classname="e2e/standings-nav.spec.ts" time="3.815">
 <properties>
 <property name="fail" value="BUG-003 alert text contrast 4.45:1 (needs 4.5:1)">
 </property>
@@ -430,15 +430,15 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e/matches.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="mobile-chrome" tests="2" failures="0" skipped="0" time="5.97" errors="0">
-<testcase name="Match center › MC-01 lists every series and shows a count @smoke @mobile" classname="e2e/matches.spec.ts" time="3.076">
+<testsuite name="e2e/matches.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="mobile-chrome" tests="2" failures="0" skipped="0" time="5.994" errors="0">
+<testcase name="Match center › MC-01 lists every series and shows a count @smoke @mobile" classname="e2e/matches.spec.ts" time="2.981">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-mobile-chrome/attachments/MC-01-229c5305c926d8f763647ca8e1eda5cbc1d00c0d.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Match center › MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only" classname="e2e/matches.spec.ts" time="2.894">
+<testcase name="Match center › MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only" classname="e2e/matches.spec.ts" time="3.013">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/matches-Match-center-MC-09-3da6b--a-phone-mobile-mobile-only-mobile-chrome/attachments/MC-09-a730f6c8a40534bfba31963feb51112a6a8b25bb.png]]
@@ -446,8 +446,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e/predictor.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.039" errors="0">
-<testcase name="Swiss predictor › PR-01 round 1 shows eight official pairings @smoke @mobile" classname="e2e/predictor.spec.ts" time="3.039">
+<testsuite name="e2e/predictor.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="2.456" errors="0">
+<testcase name="Swiss predictor › PR-01 round 1 shows eight official pairings @smoke @mobile" classname="e2e/predictor.spec.ts" time="2.456">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-mobile-chrome/attachments/PR-01-0aafd580f5eef9b86027edae80d6ea9c3521387f.png]]
@@ -455,15 +455,15 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e/standings-nav.spec.ts" timestamp="2026-10-28T09:10:23.049Z" hostname="mobile-chrome" tests="2" failures="0" skipped="0" time="5.306" errors="0">
-<testcase name="Standings and bracket › ST-01 standings page renders stage tabs @smoke @mobile" classname="e2e/standings-nav.spec.ts" time="2.685">
+<testsuite name="e2e/standings-nav.spec.ts" timestamp="2026-10-28T09:16:53.615Z" hostname="mobile-chrome" tests="2" failures="0" skipped="0" time="5.065" errors="0">
+<testcase name="Standings and bracket › ST-01 standings page renders stage tabs @smoke @mobile" classname="e2e/standings-nav.spec.ts" time="2.813">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-mobile-chrome/attachments/ST-01-9353956bc28d007a7642ee810cb91fe31a42dc34.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Navigation, search and resilience › NV-05 mobile menu opens and lists navigation @mobile @mobile-only" classname="e2e/standings-nav.spec.ts" time="2.621">
+<testcase name="Navigation, search and resilience › NV-05 mobile menu opens and lists navigation @mobile @mobile-only" classname="e2e/standings-nav.spec.ts" time="2.252">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/standings-nav-Navigation-s-08b78-vigation-mobile-mobile-only-mobile-chrome/attachments/NV-05-76b36c13ed63c1de11a85c6f278c1bf37476003d.png]]

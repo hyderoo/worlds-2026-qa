@@ -2,11 +2,11 @@
   "config": {
     "argv": [
       "/usr/bin/node",
-      "/tmp/pw/worlds-2026-qa/node_modules/.bin/playwright",
+      "./node_modules/.bin/playwright",
       "test"
     ],
-    "configFile": "/tmp/pw/worlds-2026-qa/playwright.config.ts",
-    "rootDir": "/tmp/pw/worlds-2026-qa/tests",
+    "configFile": "./playwright.config.ts",
+    "rootDir": "./tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -22,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -30,7 +30,7 @@
         },
         "id": "api",
         "name": "api",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/api",
+        "testDir": "./tests/api",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -38,7 +38,7 @@
         "timeout": 45000
       },
       {
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -46,7 +46,7 @@
         },
         "id": "desktop-chrome",
         "name": "desktop-chrome",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testDir": "./tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -54,7 +54,7 @@
         "timeout": 45000
       },
       {
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -62,7 +62,7 @@
         },
         "id": "mobile-chrome",
         "name": "mobile-chrome",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testDir": "./tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -74,15 +74,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 3
         },
         "name": "api",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/api",
-        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/api",
+        "testDir": "./tests/api",
+        "snapshotDir": "./tests/api",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 45000,
@@ -93,7 +93,7 @@
           "screenshot": "only-on-failure",
           "video": "off",
           "launchOptions": {
-            "executablePath": "/usr/bin/google-chrome",
+            "executablePath": "chrome",
             "args": [
               "--no-sandbox"
             ]
@@ -106,15 +106,15 @@
       {
         "grep": {},
         "grepInvert": {},
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 3
         },
         "name": "desktop-chrome",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
-        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testDir": "./tests/e2e",
+        "snapshotDir": "./tests/e2e",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 45000,
@@ -125,7 +125,7 @@
           "screenshot": "only-on-failure",
           "video": "off",
           "launchOptions": {
-            "executablePath": "/usr/bin/google-chrome",
+            "executablePath": "chrome",
             "args": [
               "--no-sandbox"
             ]
@@ -151,15 +151,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "outputDir": "./test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 3
         },
         "name": "mobile-chrome",
-        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
-        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testDir": "./tests/e2e",
+        "snapshotDir": "./tests/e2e",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 45000,
@@ -170,7 +170,7 @@
           "screenshot": "only-on-failure",
           "video": "off",
           "launchOptions": {
-            "executablePath": "/usr/bin/google-chrome",
+            "executablePath": "chrome",
             "args": [
               "--no-sandbox"
             ]
@@ -262,12 +262,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 292,
+                      "duration": 277,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.597Z",
+                      "startTime": "2026-10-28T09:16:53.966Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -296,12 +296,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 335,
+                      "duration": 278,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.454Z",
+                      "startTime": "2026-10-28T09:16:54.165Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -330,12 +330,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 466,
+                      "duration": 368,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.654Z",
+                      "startTime": "2026-10-28T09:16:54.135Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -361,15 +361,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 114,
+                      "duration": 282,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.854Z",
+                      "startTime": "2026-10-28T09:16:54.295Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -395,15 +395,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 137,
+                      "duration": 121,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.923Z",
+                      "startTime": "2026-10-28T09:16:54.476Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -429,15 +429,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 108,
+                      "duration": 118,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:23.980Z",
+                      "startTime": "2026-10-28T09:16:54.546Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -466,12 +466,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 237,
+                      "duration": 287,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.071Z",
+                      "startTime": "2026-10-28T09:16:54.586Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -500,12 +500,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 364,
+                      "duration": 421,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.099Z",
+                      "startTime": "2026-10-28T09:16:54.621Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -534,12 +534,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 292,
+                      "duration": 253,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.163Z",
+                      "startTime": "2026-10-28T09:16:54.676Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -585,12 +585,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 96,
+                      "duration": 92,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.321Z",
+                      "startTime": "2026-10-28T09:16:54.888Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -616,15 +616,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 103,
+                      "duration": 147,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.426Z",
+                      "startTime": "2026-10-28T09:16:54.944Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -650,15 +650,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 198,
+                      "duration": 145,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.480Z",
+                      "startTime": "2026-10-28T09:16:54.990Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -692,7 +692,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.484Z",
+                      "startTime": "2026-10-28T09:16:55.064Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -718,15 +718,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 155,
+                      "duration": 106,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.538Z",
+                      "startTime": "2026-10-28T09:16:55.097Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -752,15 +752,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 121,
+                      "duration": 88,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.656Z",
+                      "startTime": "2026-10-28T09:16:55.143Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -789,12 +789,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 288,
+                      "duration": 218,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.696Z",
+                      "startTime": "2026-10-28T09:16:55.211Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -823,12 +823,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 164,
+                      "duration": 181,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.700Z",
+                      "startTime": "2026-10-28T09:16:55.239Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -857,12 +857,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 275,
+                      "duration": 223,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.785Z",
+                      "startTime": "2026-10-28T09:16:55.252Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -891,12 +891,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 73,
+                      "duration": 70,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:24.871Z",
+                      "startTime": "2026-10-28T09:16:55.433Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -940,20 +940,20 @@
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4652,
+                      "duration": 3990,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:25.319Z",
+                      "startTime": "2026-10-28T09:16:56.128Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-10 completed",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-d5e12--its-count-matches-the-list-desktop-chrome/attachments/MC-10-completed-d6bce0c27049a4cf930aff8c0a03d382029330e8.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-d5e12--its-count-matches-the-list-desktop-chrome/attachments/MC-10-completed-d6bce0c27049a4cf930aff8c0a03d382029330e8.png"
                         }
                       ]
                     }
@@ -980,20 +980,20 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3050,
+                      "duration": 2859,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:25.542Z",
+                      "startTime": "2026-10-28T09:16:55.904Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-11",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-86e32--filter-keeps-only-that-day-desktop-chrome/attachments/MC-11-6774328625ec9d18cd9aa3bc56022151a78fb404.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-86e32--filter-keeps-only-that-day-desktop-chrome/attachments/MC-11-6774328625ec9d18cd9aa3bc56022151a78fb404.png"
                         }
                       ]
                     }
@@ -1020,20 +1020,20 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3198,
+                      "duration": 3554,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:25.679Z",
+                      "startTime": "2026-10-28T09:16:56.147Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-12",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-afc22-ith-a-team-from-that-region-desktop-chrome/attachments/MC-12-9d0b5061fc7ab0be8a69a45a0a5aae57f997c707.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-afc22-ith-a-team-from-that-region-desktop-chrome/attachments/MC-12-9d0b5061fc7ab0be8a69a45a0a5aae57f997c707.png"
                         }
                       ]
                     }
@@ -1060,20 +1060,20 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3153,
+                      "duration": 2817,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:29.124Z",
+                      "startTime": "2026-10-28T09:16:59.051Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-13",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-fbf25--the-URL-and-keeps-the-list-desktop-chrome/attachments/MC-13-7be1b0a51995e4897804c254e70ed81e059ff4af.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-fbf25--the-URL-and-keeps-the-list-desktop-chrome/attachments/MC-13-7be1b0a51995e4897804c254e70ed81e059ff4af.png"
                         }
                       ]
                     }
@@ -1100,14 +1100,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2942,
+                      "duration": 2874,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:29.371Z",
+                      "startTime": "2026-10-28T09:17:00.147Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1142,20 +1142,20 @@
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1968,
+                      "duration": 1796,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:30.414Z",
+                      "startTime": "2026-10-28T09:17:00.637Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NG-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-799af-s-guidance-not-a-blank-page-desktop-chrome/attachments/NG-01-7ae931bc7cf8ff8cabc42da5f3d46e892288fb8d.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-799af-s-guidance-not-a-blank-page-desktop-chrome/attachments/NG-01-7ae931bc7cf8ff8cabc42da5f3d46e892288fb8d.png"
                         }
                       ]
                     }
@@ -1182,14 +1182,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1938,
+                      "duration": 1455,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:32.326Z",
+                      "startTime": "2026-10-28T09:17:01.878Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1215,15 +1215,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1932,
+                      "duration": 1728,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:32.357Z",
+                      "startTime": "2026-10-28T09:17:02.454Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1249,15 +1249,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2928,
+                      "duration": 2454,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:32.410Z",
+                      "startTime": "2026-10-28T09:17:03.066Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1284,14 +1284,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2899,
+                      "duration": 2387,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:34.284Z",
+                      "startTime": "2026-10-28T09:17:03.406Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1317,15 +1317,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2752,
+                      "duration": 2354,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:34.314Z",
+                      "startTime": "2026-10-28T09:17:04.205Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1351,21 +1351,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 895,
+                      "duration": 1390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:35.369Z",
+                      "startTime": "2026-10-28T09:17:05.537Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NG-07",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-f9bc9-ode-returns-a-real-404-page-desktop-chrome/attachments/NG-07-9362eff574cfdfeeacb1ec16ab68c513460a549d.png"
+                          "path": "./test-results/filters-and-pages-Match-fi-f9bc9-ode-returns-a-real-404-page-desktop-chrome/attachments/NG-07-9362eff574cfdfeeacb1ec16ab68c513460a549d.png"
                         }
                       ]
                     }
@@ -1391,15 +1391,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1606,
+                      "duration": 1698,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:36.312Z",
+                      "startTime": "2026-10-28T09:17:05.828Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1425,15 +1425,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2475,
+                      "duration": 2568,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:37.089Z",
+                      "startTime": "2026-10-28T09:17:06.571Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1458,7 +1458,7 @@
                       "type": "fail",
                       "description": "BUG-005 unknown saved time zone crashes the app into the error boundary",
                       "location": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                        "file": "./tests/e2e/filters-and-pages.spec.ts",
                         "line": 135,
                         "column": 10
                       }
@@ -1469,15 +1469,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 12512,
+                      "duration": 12429,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n    at /tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts:137:39",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n    at ./tests/e2e/filters-and-pages.spec.ts:137:39",
                         "location": {
-                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                          "file": "./tests/e2e/filters-and-pages.spec.ts",
                           "column": 39,
                           "line": 137
                         },
@@ -1486,23 +1486,23 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                            "file": "./tests/e2e/filters-and-pages.spec.ts",
                             "column": 39,
                             "line": 137
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n\n  135 |     test.fail(true, \"BUG-005 unknown saved time zone crashes the app into the error boundary\");\n  136 |     await app.open(\"/matches\", { tz: \"Mars/Olympus\", tzSet: true });\n> 137 |     await expect(cards(page).first()).toBeVisible();\n      |                                       ^\n  138 |     await expect(cards(page).first()).toContainText(/\\d{2}:\\d{2}/);\n  139 |   });\n  140 | });\n    at /tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts:137:39"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n\n  135 |     test.fail(true, \"BUG-005 unknown saved time zone crashes the app into the error boundary\");\n  136 |     await app.open(\"/matches\", { tz: \"Mars/Olympus\", tzSet: true });\n> 137 |     await expect(cards(page).first()).toBeVisible();\n      |                                       ^\n  138 |     await expect(cards(page).first()).toContainText(/\\d{2}:\\d{2}/);\n  139 |   });\n  140 | });\n    at ./tests/e2e/filters-and-pages.spec.ts:137:39"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:37.195Z",
+                      "startTime": "2026-10-28T09:17:06.963Z",
                       "annotations": [
                         {
                           "type": "fail",
                           "description": "BUG-005 unknown saved time zone crashes the app into the error boundary",
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                            "file": "./tests/e2e/filters-and-pages.spec.ts",
                             "line": 135,
                             "column": 10
                           }
@@ -1512,11 +1512,11 @@
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-73ee0--times-known-issue-BUG-005--desktop-chrome/error-context.md"
+                          "path": "./test-results/filters-and-pages-Match-fi-73ee0--times-known-issue-BUG-005--desktop-chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                        "file": "./tests/e2e/filters-and-pages.spec.ts",
                         "column": 39,
                         "line": 137
                       }
@@ -1551,15 +1551,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1224,
+                      "duration": 1300,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:37.937Z",
+                      "startTime": "2026-10-28T09:17:07.541Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1585,15 +1585,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 953,
+                      "duration": 1042,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:39.220Z",
+                      "startTime": "2026-10-28T09:17:08.877Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1619,15 +1619,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1072,
+                      "duration": 1137,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:39.574Z",
+                      "startTime": "2026-10-28T09:17:09.163Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1653,15 +1653,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1018,
+                      "duration": 1138,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:40.194Z",
+                      "startTime": "2026-10-28T09:17:09.929Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1687,15 +1687,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1112,
+                      "duration": 1050,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:40.659Z",
+                      "startTime": "2026-10-28T09:17:10.317Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1721,15 +1721,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1117,
+                      "duration": 1136,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:41.249Z",
+                      "startTime": "2026-10-28T09:17:11.086Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1755,15 +1755,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 953,
+                      "duration": 1100,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:41.810Z",
+                      "startTime": "2026-10-28T09:17:11.385Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1789,15 +1789,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 991,
+                      "duration": 939,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:42.375Z",
+                      "startTime": "2026-10-28T09:17:12.232Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1823,15 +1823,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 831,
+                      "duration": 865,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:42.778Z",
+                      "startTime": "2026-10-28T09:17:12.508Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1857,15 +1857,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1017,
+                      "duration": 977,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:43.407Z",
+                      "startTime": "2026-10-28T09:17:13.180Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1891,15 +1891,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 982,
+                      "duration": 1000,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:43.618Z",
+                      "startTime": "2026-10-28T09:17:13.386Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1925,15 +1925,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1134,
+                      "duration": 1075,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:44.441Z",
+                      "startTime": "2026-10-28T09:17:14.179Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1959,15 +1959,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1020,
+                      "duration": 1018,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:44.624Z",
+                      "startTime": "2026-10-28T09:17:14.401Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1993,15 +1993,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 975,
+                      "duration": 844,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:45.599Z",
+                      "startTime": "2026-10-28T09:17:15.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2035,15 +2035,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1891,
+                      "duration": 1994,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:45.664Z",
+                      "startTime": "2026-10-28T09:17:15.444Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2069,15 +2069,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1659,
+                      "duration": 1719,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:46.605Z",
+                      "startTime": "2026-10-28T09:17:16.129Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2103,15 +2103,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1815,
+                      "duration": 1912,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:47.570Z",
+                      "startTime": "2026-10-28T09:17:17.451Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2137,15 +2137,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1989,
+                      "duration": 1968,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:48.276Z",
+                      "startTime": "2026-10-28T09:17:17.858Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2171,15 +2171,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2325,
+                      "duration": 2663,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:49.406Z",
+                      "startTime": "2026-10-28T09:17:19.372Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2205,15 +2205,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2321,
+                      "duration": 2981,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:49.724Z",
+                      "startTime": "2026-10-28T09:17:19.425Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2239,15 +2239,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2342,
+                      "duration": 2448,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:50.271Z",
+                      "startTime": "2026-10-28T09:17:19.840Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2273,15 +2273,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2519,
+                      "duration": 2545,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:51.748Z",
+                      "startTime": "2026-10-28T09:17:22.055Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2316,14 +2316,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2461,
+                      "duration": 3032,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:52.054Z",
+                      "startTime": "2026-10-28T09:17:22.323Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2349,15 +2349,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2728,
+                      "duration": 2825,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:52.623Z",
+                      "startTime": "2026-10-28T09:17:22.417Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2383,15 +2383,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2335,
+                      "duration": 2445,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:54.279Z",
+                      "startTime": "2026-10-28T09:17:24.612Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2417,15 +2417,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2424,
+                      "duration": 2751,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:54.554Z",
+                      "startTime": "2026-10-28T09:17:25.251Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2451,15 +2451,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2549,
+                      "duration": 2669,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:55.366Z",
+                      "startTime": "2026-10-28T09:17:25.375Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2485,15 +2485,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2583,
+                      "duration": 2431,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:56.627Z",
+                      "startTime": "2026-10-28T09:17:27.073Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2519,15 +2519,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2468,
+                      "duration": 2496,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:57.012Z",
+                      "startTime": "2026-10-28T09:17:28.009Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2553,15 +2553,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2512,
+                      "duration": 2695,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:57.927Z",
+                      "startTime": "2026-10-28T09:17:28.087Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2595,15 +2595,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2836,
+                      "duration": 2412,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:59.220Z",
+                      "startTime": "2026-10-28T09:17:29.516Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2629,15 +2629,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2589,
+                      "duration": 2758,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:10:59.488Z",
+                      "startTime": "2026-10-28T09:17:30.518Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2663,15 +2663,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2929,
+                      "duration": 2606,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:00.468Z",
+                      "startTime": "2026-10-28T09:17:30.795Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2717,21 +2717,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2452,
+                      "duration": 2669,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:02.085Z",
+                      "startTime": "2026-10-28T09:17:31.940Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-desktop-chrome/attachments/MC-01-bdda25e016628061a0eaa204b3eac8515bd5cfd0.png"
+                          "path": "./test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-desktop-chrome/attachments/MC-01-bdda25e016628061a0eaa204b3eac8515bd5cfd0.png"
                         }
                       ]
                     }
@@ -2757,21 +2757,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2999,
+                      "duration": 2578,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:02.130Z",
+                      "startTime": "2026-10-28T09:17:33.294Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-02",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-02-b0957-and-is-reflected-in-the-URL-desktop-chrome/attachments/MC-02-7283df8d83b43876f3bb9332d22b965db267ea32.png"
+                          "path": "./test-results/matches-Match-center-MC-02-b0957-and-is-reflected-in-the-URL-desktop-chrome/attachments/MC-02-7283df8d83b43876f3bb9332d22b965db267ea32.png"
                         }
                       ]
                     }
@@ -2797,15 +2797,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2974,
+                      "duration": 3200,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:03.422Z",
+                      "startTime": "2026-10-28T09:17:33.461Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2831,21 +2831,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2734,
+                      "duration": 2299,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:04.550Z",
+                      "startTime": "2026-10-28T09:17:34.636Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-04",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-04-abb90-nds-only-that-team-s-series-desktop-chrome/attachments/MC-04-5b3fdb0a134efac6f7f81a0c1d461cfc80b204aa.png"
+                          "path": "./test-results/matches-Match-center-MC-04-abb90-nds-only-that-team-s-series-desktop-chrome/attachments/MC-04-5b3fdb0a134efac6f7f81a0c1d461cfc80b204aa.png"
                         }
                       ]
                     }
@@ -2871,15 +2871,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2496,
+                      "duration": 2684,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:05.165Z",
+                      "startTime": "2026-10-28T09:17:35.897Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2905,15 +2905,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2382,
+                      "duration": 2356,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:06.452Z",
+                      "startTime": "2026-10-28T09:17:36.704Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2939,21 +2939,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2935,
+                      "duration": 3106,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:07.324Z",
+                      "startTime": "2026-10-28T09:17:36.943Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-07",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-07-a9a95-detail-page-with-both-teams-desktop-chrome/attachments/MC-07-5a0263cd96b600fbe3c0c23e8d8fd349eaceadc8.png"
+                          "path": "./test-results/matches-Match-center-MC-07-a9a95-detail-page-with-both-teams-desktop-chrome/attachments/MC-07-5a0263cd96b600fbe3c0c23e8d8fd349eaceadc8.png"
                         }
                       ]
                     }
@@ -2979,15 +2979,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1102,
+                      "duration": 1261,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:07.678Z",
+                      "startTime": "2026-10-28T09:17:38.592Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3012,7 +3012,7 @@
                       "type": "fail",
                       "description": "BUG-002 soft 404 on /matches/<unknown id>",
                       "location": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                        "file": "./tests/e2e/matches.spec.ts",
                         "line": 82,
                         "column": 10
                       }
@@ -3024,14 +3024,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 1205,
+                      "duration": 1513,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts:84:27",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at ./tests/e2e/matches.spec.ts:84:27",
                         "location": {
-                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                          "file": "./tests/e2e/matches.spec.ts",
                           "column": 27,
                           "line": 84
                         },
@@ -3040,23 +3040,23 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                            "file": "./tests/e2e/matches.spec.ts",
                             "column": 27,
                             "line": 84
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  82 |     test.fail(true, \"BUG-002 soft 404 on /matches/<unknown id>\");\n  83 |     const res = await page.goto(\"/matches/000\");\n> 84 |     expect(res?.status()).toBe(404);\n     |                           ^\n  85 |   });\n  86 |\n  87 |   test(\"MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only\", async ({ page, app }, info) => {\n    at /tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts:84:27"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  82 |     test.fail(true, \"BUG-002 soft 404 on /matches/<unknown id>\");\n  83 |     const res = await page.goto(\"/matches/000\");\n> 84 |     expect(res?.status()).toBe(404);\n     |                           ^\n  85 |   });\n  86 |\n  87 |   test(\"MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only\", async ({ page, app }, info) => {\n    at ./tests/e2e/matches.spec.ts:84:27"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:08.787Z",
+                      "startTime": "2026-10-28T09:17:39.066Z",
                       "annotations": [
                         {
                           "type": "fail",
                           "description": "BUG-002 soft 404 on /matches/<unknown id>",
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                            "file": "./tests/e2e/matches.spec.ts",
                             "line": 82,
                             "column": 10
                           }
@@ -3066,11 +3066,11 @@
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-08-99115-TP-404-known-issue-BUG-002--desktop-chrome/error-context.md"
+                          "path": "./test-results/matches-Match-center-MC-08-99115-TP-404-known-issue-BUG-002--desktop-chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                        "file": "./tests/e2e/matches.spec.ts",
                         "column": 27,
                         "line": 84
                       }
@@ -3101,20 +3101,20 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3076,
+                      "duration": 2981,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:44.078Z",
+                      "startTime": "2026-10-28T09:18:14.495Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-mobile-chrome/attachments/MC-01-229c5305c926d8f763647ca8e1eda5cbc1d00c0d.png"
+                          "path": "./test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-mobile-chrome/attachments/MC-01-229c5305c926d8f763647ca8e1eda5cbc1d00c0d.png"
                         }
                       ]
                     }
@@ -3146,18 +3146,18 @@
                       "workerIndex": 7,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2894,
+                      "duration": 3013,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:44.386Z",
+                      "startTime": "2026-10-28T09:18:14.579Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "MC-09",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-09-3da6b--a-phone-mobile-mobile-only-mobile-chrome/attachments/MC-09-a730f6c8a40534bfba31963feb51112a6a8b25bb.png"
+                          "path": "./test-results/matches-Match-center-MC-09-3da6b--a-phone-mobile-mobile-only-mobile-chrome/attachments/MC-09-a730f6c8a40534bfba31963feb51112a6a8b25bb.png"
                         }
                       ]
                     }
@@ -3191,21 +3191,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2810,
+                      "duration": 2580,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:08.845Z",
+                      "startTime": "2026-10-28T09:17:39.862Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "TZ-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Preferences-TZ-01--de07b-y-kickoff-time-consistently-desktop-chrome/attachments/TZ-01-9112f69a9c45d367b1b8596735dca3ba8d8a4bf4.png"
+                          "path": "./test-results/matches-Preferences-TZ-01--de07b-y-kickoff-time-consistently-desktop-chrome/attachments/TZ-01-9112f69a9c45d367b1b8596735dca3ba8d8a4bf4.png"
                         }
                       ]
                     }
@@ -3231,15 +3231,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3694,
+                      "duration": 4235,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:10.021Z",
+                      "startTime": "2026-10-28T09:17:40.068Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3265,21 +3265,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3850,
+                      "duration": 3880,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:10.275Z",
+                      "startTime": "2026-10-28T09:17:40.615Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "LG-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Preferences-LG-01--2411d--the-interface-and-persists-desktop-chrome/attachments/LG-01-cf550d93d97a507a5de64555c6f39dced3c4a5ab.png"
+                          "path": "./test-results/matches-Preferences-LG-01--2411d--the-interface-and-persists-desktop-chrome/attachments/LG-01-cf550d93d97a507a5de64555c6f39dced3c4a5ab.png"
                         }
                       ]
                     }
@@ -3305,15 +3305,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2106,
+                      "duration": 2826,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:11.667Z",
+                      "startTime": "2026-10-28T09:17:42.450Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3359,21 +3359,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2147,
+                      "duration": 1897,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:13.742Z",
+                      "startTime": "2026-10-28T09:17:44.314Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "PR-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-desktop-chrome/attachments/PR-01-ebb9fc2d0ef4255dba0f8b630eb9811ffb7266f4.png"
+                          "path": "./test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-desktop-chrome/attachments/PR-01-ebb9fc2d0ef4255dba0f8b630eb9811ffb7266f4.png"
                         }
                       ]
                     }
@@ -3399,21 +3399,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2564,
+                      "duration": 2066,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:13.787Z",
+                      "startTime": "2026-10-28T09:17:44.513Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "PR-02",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f79a0-xactly-that-team-as-pressed-desktop-chrome/attachments/PR-02-db01b87c95e0815174f6b2591a5f5fdbe1aa9cfe.png"
+                          "path": "./test-results/predictor-Swiss-predictor--f79a0-xactly-that-team-as-pressed-desktop-chrome/attachments/PR-02-db01b87c95e0815174f6b2591a5f5fdbe1aa9cfe.png"
                         }
                       ]
                     }
@@ -3440,14 +3440,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3336,
+                      "duration": 2457,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:14.170Z",
+                      "startTime": "2026-10-28T09:17:45.288Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3473,21 +3473,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2626,
+                      "duration": 2030,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:15.900Z",
+                      "startTime": "2026-10-28T09:17:46.228Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "PR-04",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--9f5b9-nfirmation-and-clears-picks-desktop-chrome/attachments/PR-04-e0c90d360e5bd69d74c688c72606f8823207aa14.png"
+                          "path": "./test-results/predictor-Swiss-predictor--9f5b9-nfirmation-and-clears-picks-desktop-chrome/attachments/PR-04-e0c90d360e5bd69d74c688c72606f8823207aa14.png"
                         }
                       ]
                     }
@@ -3513,15 +3513,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2231,
+                      "duration": 2299,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:16.370Z",
+                      "startTime": "2026-10-28T09:17:46.592Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3548,14 +3548,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1729,
+                      "duration": 1949,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:17.539Z",
+                      "startTime": "2026-10-28T09:17:47.766Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3581,21 +3581,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2009,
+                      "duration": 2092,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:18.548Z",
+                      "startTime": "2026-10-28T09:17:48.270Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "PR-07",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--6210a-s-the-three-knockout-rounds-desktop-chrome/attachments/PR-07-4ca95a9341454ed8a5fde481eb844263aee236d9.png"
+                          "path": "./test-results/predictor-Swiss-predictor--6210a-s-the-three-knockout-rounds-desktop-chrome/attachments/PR-07-4ca95a9341454ed8a5fde481eb844263aee236d9.png"
                         }
                       ]
                     }
@@ -3621,15 +3621,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2762,
+                      "duration": 2384,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:18.607Z",
+                      "startTime": "2026-10-28T09:17:48.899Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3659,20 +3659,20 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3039,
+                      "duration": 2456,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:46.677Z",
+                      "startTime": "2026-10-28T09:18:17.161Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "PR-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-mobile-chrome/attachments/PR-01-0aafd580f5eef9b86027edae80d6ea9c3521387f.png"
+                          "path": "./test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-mobile-chrome/attachments/PR-01-0aafd580f5eef9b86027edae80d6ea9c3521387f.png"
                         }
                       ]
                     }
@@ -3707,14 +3707,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1706,
+                      "duration": 1632,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:19.289Z",
+                      "startTime": "2026-10-28T09:17:49.723Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3740,15 +3740,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1699,
+                      "duration": 1755,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:20.579Z",
+                      "startTime": "2026-10-28T09:17:50.372Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3774,15 +3774,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1841,
+                      "duration": 1820,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:21.004Z",
+                      "startTime": "2026-10-28T09:17:51.291Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3825,21 +3825,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2286,
+                      "duration": 2527,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:21.382Z",
+                      "startTime": "2026-10-28T09:17:51.375Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "SP-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--d270c-nothing-asks-to-be-revealed-desktop-chrome/attachments/SP-01-0ba038d7897fc76e6cc1fd525740f05536fe6cf3.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--d270c-nothing-asks-to-be-revealed-desktop-chrome/attachments/SP-01-0ba038d7897fc76e6cc1fd525740f05536fe6cf3.png"
                         }
                       ]
                     }
@@ -3865,21 +3865,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2428,
+                      "duration": 2448,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:22.298Z",
+                      "startTime": "2026-10-28T09:17:52.137Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "SP-02",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--3cc39-d-offers-a-per-match-reveal-desktop-chrome/attachments/SP-02-37d06f99cd74325c00180155be5efd5f8b4439f5.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--3cc39-d-offers-a-per-match-reveal-desktop-chrome/attachments/SP-02-37d06f99cd74325c00180155be5efd5f8b4439f5.png"
                         }
                       ]
                     }
@@ -3905,15 +3905,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3069,
+                      "duration": 2747,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:22.857Z",
+                      "startTime": "2026-10-28T09:17:53.126Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3939,21 +3939,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2362,
+                      "duration": 2446,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:23.705Z",
+                      "startTime": "2026-10-28T09:17:53.910Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "SP-04",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--19675-es-every-other-match-hidden-desktop-chrome/attachments/SP-04-f5b717b37d987cccdba3511fa4909a1988775487.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--19675-es-every-other-match-hidden-desktop-chrome/attachments/SP-04-f5b717b37d987cccdba3511fa4909a1988775487.png"
                         }
                       ]
                     }
@@ -3979,15 +3979,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2938,
+                      "duration": 3308,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:24.746Z",
+                      "startTime": "2026-10-28T09:17:54.621Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4013,26 +4013,26 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2906,
+                      "duration": 2822,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:25.939Z",
+                      "startTime": "2026-10-28T09:17:55.880Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "SP-06 hidden",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-hidden-c2dab9e96a7bc825bce731f6fb46d81116cc6bb7.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-hidden-c2dab9e96a7bc825bce731f6fb46d81116cc6bb7.png"
                         },
                         {
                           "name": "SP-06 shown",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-shown-7128130f4ab4bc475e4a7fcc04c68560e7cb9830.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-shown-7128130f4ab4bc475e4a7fcc04c68560e7cb9830.png"
                         }
                       ]
                     }
@@ -4058,15 +4058,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2471,
+                      "duration": 2754,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:26.074Z",
+                      "startTime": "2026-10-28T09:17:56.364Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4092,21 +4092,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2619,
+                      "duration": 2402,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:27.694Z",
+                      "startTime": "2026-10-28T09:17:57.936Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "SP-08",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--35aa7-ult-when-spoiler-free-is-on-desktop-chrome/attachments/SP-08-0a35705a34687067e3f743cc276ca9cfb9c9e383.png"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--35aa7-ult-when-spoiler-free-is-on-desktop-chrome/attachments/SP-08-0a35705a34687067e3f743cc276ca9cfb9c9e383.png"
                         }
                       ]
                     }
@@ -4139,7 +4139,7 @@
                       "type": "fail",
                       "description": "BUG-004 flash of scores before spoiler-free applies",
                       "location": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                        "file": "./tests/e2e/spoiler.spec.ts",
                         "line": 95,
                         "column": 10
                       }
@@ -4150,15 +4150,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 3203,
+                      "duration": 2987,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts:108:69",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n    at ./tests/e2e/spoiler.spec.ts:108:69",
                         "location": {
-                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                          "file": "./tests/e2e/spoiler.spec.ts",
                           "column": 69,
                           "line": 108
                         },
@@ -4167,23 +4167,23 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                            "file": "./tests/e2e/spoiler.spec.ts",
                             "column": 69,
                             "line": 108
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n\n  106 |     await page.goto(\"/matches\", { waitUntil: \"networkidle\" });\n  107 |     await page.waitForTimeout(800);\n> 108 |     expect(await page.evaluate(() => (window as any).__leakFrames)).toBe(0);\n      |                                                                     ^\n  109 |   });\n  110 | });\n  111 |\n    at /tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts:108:69"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n\n  106 |     await page.goto(\"/matches\", { waitUntil: \"networkidle\" });\n  107 |     await page.waitForTimeout(800);\n> 108 |     expect(await page.evaluate(() => (window as any).__leakFrames)).toBe(0);\n      |                                                                     ^\n  109 |   });\n  110 | });\n  111 |\n    at ./tests/e2e/spoiler.spec.ts:108:69"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:28.556Z",
+                      "startTime": "2026-10-28T09:17:58.710Z",
                       "annotations": [
                         {
                           "type": "fail",
                           "description": "BUG-004 flash of scores before spoiler-free applies",
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                            "file": "./tests/e2e/spoiler.spec.ts",
                             "line": 95,
                             "column": 10
                           }
@@ -4193,11 +4193,11 @@
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--d4f51--is-on-known-issue-BUG-004--desktop-chrome/error-context.md"
+                          "path": "./test-results/spoiler-Spoiler-free-mode--d4f51--is-on-known-issue-BUG-004--desktop-chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                        "file": "./tests/e2e/spoiler.spec.ts",
                         "column": 69,
                         "line": 108
                       }
@@ -4245,20 +4245,20 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2085,
+                      "duration": 2181,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:29.044Z",
+                      "startTime": "2026-10-28T09:17:59.192Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "ST-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-desktop-chrome/attachments/ST-01-a7e1351f9bd1b799d75a62b8c2db74a3169da0ff.png"
+                          "path": "./test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-desktop-chrome/attachments/ST-01-a7e1351f9bd1b799d75a62b8c2db74a3169da0ff.png"
                         }
                       ]
                     }
@@ -4284,21 +4284,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2234,
+                      "duration": 2421,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:30.370Z",
+                      "startTime": "2026-10-28T09:18:00.400Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "ST-02",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-063ac-racket-and-the-record-board-desktop-chrome/attachments/ST-02-710f5febe58bf750fc2b070466179a79ba255c89.png"
+                          "path": "./test-results/standings-nav-Standings-an-063ac-racket-and-the-record-board-desktop-chrome/attachments/ST-02-710f5febe58bf750fc2b070466179a79ba255c89.png"
                         }
                       ]
                     }
@@ -4325,14 +4325,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2070,
+                      "duration": 2629,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:31.139Z",
+                      "startTime": "2026-10-28T09:18:01.391Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4358,21 +4358,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2310,
+                      "duration": 2668,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:31.830Z",
+                      "startTime": "2026-10-28T09:18:01.760Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "ST-04",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-21688--view-renders-without-error-desktop-chrome/attachments/ST-04-6d2b8b32606d494394f4719ad4e4975b28331c4c.png"
+                          "path": "./test-results/standings-nav-Standings-an-21688--view-renders-without-error-desktop-chrome/attachments/ST-04-6d2b8b32606d494394f4719ad4e4975b28331c4c.png"
                         }
                       ]
                     }
@@ -4398,15 +4398,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3417,
+                      "duration": 3112,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:32.633Z",
+                      "startTime": "2026-10-28T09:18:02.828Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4436,20 +4436,20 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2685,
+                      "duration": 2813,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:47.540Z",
+                      "startTime": "2026-10-28T09:18:17.918Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "ST-01",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-mobile-chrome/attachments/ST-01-9353956bc28d007a7642ee810cb91fe31a42dc34.png"
+                          "path": "./test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-mobile-chrome/attachments/ST-01-9353956bc28d007a7642ee810cb91fe31a42dc34.png"
                         }
                       ]
                     }
@@ -4486,14 +4486,14 @@
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2151,
+                      "duration": 2367,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:33.218Z",
+                      "startTime": "2026-10-28T09:18:04.032Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4519,21 +4519,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3154,
+                      "duration": 3037,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:34.148Z",
+                      "startTime": "2026-10-28T09:18:04.438Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NV-02",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-54a44-ith-Ctrl-K-and-finds-a-team-desktop-chrome/attachments/NV-02-14ffa2e92d1d3e5949714b4bdc4b77ac19a7bd80.png"
+                          "path": "./test-results/standings-nav-Navigation-s-54a44-ith-Ctrl-K-and-finds-a-team-desktop-chrome/attachments/NV-02-14ffa2e92d1d3e5949714b4bdc4b77ac19a7bd80.png"
                         }
                       ]
                     }
@@ -4559,21 +4559,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1451,
+                      "duration": 1487,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:35.377Z",
+                      "startTime": "2026-10-28T09:18:05.961Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NV-03",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-86e5d-branded-404-with-a-way-back-desktop-chrome/attachments/NV-03-37833bbc2f4e6babb0704e12965ddf7aa34ba816.png"
+                          "path": "./test-results/standings-nav-Navigation-s-86e5d-branded-404-with-a-way-back-desktop-chrome/attachments/NV-03-37833bbc2f4e6babb0704e12965ddf7aa34ba816.png"
                         }
                       ]
                     }
@@ -4599,21 +4599,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2787,
+                      "duration": 2950,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:36.057Z",
+                      "startTime": "2026-10-28T09:18:06.420Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NV-04",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-d8212--opens-from-the-teams-index-desktop-chrome/attachments/NV-04-aab227b0802f9c72241960350996319dff9fc240.png"
+                          "path": "./test-results/standings-nav-Navigation-s-d8212--opens-from-the-teams-index-desktop-chrome/attachments/NV-04-aab227b0802f9c72241960350996319dff9fc240.png"
                         }
                       ]
                     }
@@ -4639,21 +4639,21 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2417,
+                      "duration": 2491,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:36.841Z",
+                      "startTime": "2026-10-28T09:18:07.461Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NV-06",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-922e1-mpty-state-not-a-blank-page-desktop-chrome/attachments/NV-06-f3b6b0dcfe06c3b4f47a2febc3ad50a2d89e245f.png"
+                          "path": "./test-results/standings-nav-Navigation-s-922e1-mpty-state-not-a-blank-page-desktop-chrome/attachments/NV-06-f3b6b0dcfe06c3b4f47a2febc3ad50a2d89e245f.png"
                         }
                       ]
                     }
@@ -4667,7 +4667,7 @@
               "column": 7
             },
             {
-              "title": "NV-07 no console errors on the home page (known issue BUG-001)",
+              "title": "NV-07 no console errors on the home page for a non-UTC visitor (known issue BUG-001)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -4676,10 +4676,10 @@
                   "annotations": [
                     {
                       "type": "fail",
-                      "description": "BUG-001 React hydration error #418 on /",
+                      "description": "BUG-001 React hydration error #418 on / when the browser time zone is not UTC",
                       "location": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
-                        "line": 103,
+                        "file": "./tests/e2e/standings-nav.spec.ts",
+                        "line": 104,
                         "column": 10
                       }
                     }
@@ -4689,41 +4689,41 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 2271,
+                      "duration": 2298,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:108:20",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at ./tests/e2e/standings-nav.spec.ts:112:20",
                         "location": {
-                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                          "file": "./tests/e2e/standings-nav.spec.ts",
                           "column": 20,
-                          "line": 108
+                          "line": 112
                         },
-                        "snippet": "  106 |     page.on(\"console\", (m) => { if (m.type() === \"error\" && !/youtube|favicon|ERR_BLOCKED|Failed to load resource/i.test(m.text())) errors.push(m.text()); });\n  107 |     await app.open(\"/\");\n> 108 |     expect(errors).toEqual([]);\n      |                    ^\n  109 |   });\n  110 | });\n  111 |"
+                        "snippet": "  110 |     await page.goto(\"/\", { waitUntil: \"networkidle\" });\n  111 |     await ctx.close();\n> 112 |     expect(errors).toEqual([]);\n      |                    ^\n  113 |   });\n  114 | });\n  115 |"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "file": "./tests/e2e/standings-nav.spec.ts",
                             "column": 20,
-                            "line": 108
+                            "line": 112
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  106 |     page.on(\"console\", (m) => { if (m.type() === \"error\" && !/youtube|favicon|ERR_BLOCKED|Failed to load resource/i.test(m.text())) errors.push(m.text()); });\n  107 |     await app.open(\"/\");\n> 108 |     expect(errors).toEqual([]);\n      |                    ^\n  109 |   });\n  110 | });\n  111 |\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:108:20"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  110 |     await page.goto(\"/\", { waitUntil: \"networkidle\" });\n  111 |     await ctx.close();\n> 112 |     expect(errors).toEqual([]);\n      |                    ^\n  113 |   });\n  114 | });\n  115 |\n    at ./tests/e2e/standings-nav.spec.ts:112:20"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:37.327Z",
+                      "startTime": "2026-10-28T09:18:07.499Z",
                       "annotations": [
                         {
                           "type": "fail",
-                          "description": "BUG-001 React hydration error #418 on /",
+                          "description": "BUG-001 React hydration error #418 on / when the browser time zone is not UTC",
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
-                            "line": 103,
+                            "file": "./tests/e2e/standings-nav.spec.ts",
+                            "line": 104,
                             "column": 10
                           }
                         }
@@ -4732,22 +4732,22 @@
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-34e61-e-page-known-issue-BUG-001--desktop-chrome/error-context.md"
+                          "path": "./test-results/standings-nav-Navigation-s-6fce0-isitor-known-issue-BUG-001--desktop-chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "file": "./tests/e2e/standings-nav.spec.ts",
                         "column": 20,
-                        "line": 108
+                        "line": 112
                       }
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "d2adf2fb9abc6e62e978-5f1d1eda26d38c4dd30f",
+              "id": "d2adf2fb9abc6e62e978-78bb8c56478a66ca3113",
               "file": "e2e/standings-nav.spec.ts",
-              "line": 102,
+              "line": 103,
               "column": 7
             },
             {
@@ -4769,18 +4769,18 @@
                       "workerIndex": 7,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2621,
+                      "duration": 2252,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:47.864Z",
+                      "startTime": "2026-10-28T09:18:18.348Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "NV-05",
                           "contentType": "image/png",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-08b78-vigation-mobile-mobile-only-mobile-chrome/attachments/NV-05-76b36c13ed63c1de11a85c6f278c1bf37476003d.png"
+                          "path": "./test-results/standings-nav-Navigation-s-08b78-vigation-mobile-mobile-only-mobile-chrome/attachments/NV-05-76b36c13ed63c1de11a85c6f278c1bf37476003d.png"
                         }
                       ]
                     }
@@ -4798,7 +4798,7 @@
         {
           "title": "Accessibility (axe-core, WCAG 2 A/AA)",
           "file": "e2e/standings-nav.spec.ts",
-          "line": 112,
+          "line": 116,
           "column": 6,
           "specs": [
             {
@@ -4814,15 +4814,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3542,
+                      "duration": 3472,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:38.852Z",
+                      "startTime": "2026-10-28T09:18:09.384Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4838,7 +4838,7 @@
               ],
               "id": "d2adf2fb9abc6e62e978-810cc65dc6ffcb9130bf",
               "file": "e2e/standings-nav.spec.ts",
-              "line": 114,
+              "line": 118,
               "column": 9
             },
             {
@@ -4854,15 +4854,15 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4533,
+                      "duration": 4298,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:39.271Z",
+                      "startTime": "2026-10-28T09:18:09.814Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4878,7 +4878,7 @@
               ],
               "id": "d2adf2fb9abc6e62e978-806550968bd767a7496c",
               "file": "e2e/standings-nav.spec.ts",
-              "line": 114,
+              "line": 118,
               "column": 9
             },
             {
@@ -4895,14 +4895,14 @@
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3865,
+                      "duration": 3925,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:39.616Z",
+                      "startTime": "2026-10-28T09:18:09.964Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4918,7 +4918,7 @@
               ],
               "id": "d2adf2fb9abc6e62e978-a58e10c8fc29babc48a6",
               "file": "e2e/standings-nav.spec.ts",
-              "line": 114,
+              "line": 118,
               "column": 9
             },
             {
@@ -4933,8 +4933,8 @@
                       "type": "fail",
                       "description": "BUG-003 alert text contrast 4.45:1 (needs 4.5:1)",
                       "location": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
-                        "line": 115,
+                        "file": "./tests/e2e/standings-nav.spec.ts",
+                        "line": 119,
                         "column": 39
                       }
                     }
@@ -4944,41 +4944,41 @@
                   "projectName": "desktop-chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3834,
+                      "duration": 3815,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:120:80",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at ./tests/e2e/standings-nav.spec.ts:124:80",
                         "location": {
-                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                          "file": "./tests/e2e/standings-nav.spec.ts",
                           "column": 80,
-                          "line": 120
+                          "line": 124
                         },
-                        "snippet": "  118 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  119 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 120 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  121 |     });\n  122 |   }\n  123 | });"
+                        "snippet": "  122 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  123 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 124 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  125 |     });\n  126 |   }\n  127 | });"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "file": "./tests/e2e/standings-nav.spec.ts",
                             "column": 80,
-                            "line": 120
+                            "line": 124
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  118 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  119 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 120 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  121 |     });\n  122 |   }\n  123 | });\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:120:80"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  122 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  123 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 124 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  125 |     });\n  126 |   }\n  127 | });\n    at ./tests/e2e/standings-nav.spec.ts:124:80"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-28T09:11:42.413Z",
+                      "startTime": "2026-10-28T09:18:12.879Z",
                       "annotations": [
                         {
                           "type": "fail",
                           "description": "BUG-003 alert text contrast 4.45:1 (needs 4.5:1)",
                           "location": {
-                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
-                            "line": 115,
+                            "file": "./tests/e2e/standings-nav.spec.ts",
+                            "line": 119,
                             "column": 39
                           }
                         }
@@ -4992,13 +4992,13 @@
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Accessibilit-a53fd-ations-known-issue-BUG-003--desktop-chrome/error-context.md"
+                          "path": "./test-results/standings-nav-Accessibilit-a53fd-ations-known-issue-BUG-003--desktop-chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "file": "./tests/e2e/standings-nav.spec.ts",
                         "column": 80,
-                        "line": 120
+                        "line": 124
                       }
                     }
                   ],
@@ -5007,7 +5007,7 @@
               ],
               "id": "d2adf2fb9abc6e62e978-1391baf37a99b5d4db1a",
               "file": "e2e/standings-nav.spec.ts",
-              "line": 114,
+              "line": 118,
               "column": 9
             }
           ]
@@ -5017,8 +5017,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-28T09:10:22.821Z",
-    "duration": 87769.612,
+    "startTime": "2026-10-28T09:16:53.534Z",
+    "duration": 87288.704,
     "expected": 120,
     "skipped": 0,
     "unexpected": 0,

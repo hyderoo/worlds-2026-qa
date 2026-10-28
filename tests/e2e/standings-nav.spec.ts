@@ -98,13 +98,17 @@ test.describe("Navigation, search and resilience", () => {
     await evidence(page, info, "NV-06");
   });
 
-  // BUG-001: React hydration mismatch (minified error #418) is thrown on first load of the home page.
-  test("NV-07 no console errors on the home page (known issue BUG-001)", async ({ page, app }) => {
-    test.fail(true, "BUG-001 React hydration error #418 on /");
+  // BUG-001: React hydration mismatch (minified error #418) on first load of the home page. It only happens when the visitor's
+  // browser time zone is not UTC (the server renders its default zone, the client switches to the browser zone). So the test runs in a New York context.
+  test("NV-07 no console errors on the home page for a non-UTC visitor (known issue BUG-001)", async ({ browser, baseURL }) => {
+    test.fail(true, "BUG-001 React hydration error #418 on / when the browser time zone is not UTC");
+    const ctx = await browser.newContext({ baseURL, timezoneId: "America/New_York", locale: "en-US" });
+    const page = await ctx.newPage();
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("console", (m) => { if (m.type() === "error" && !/youtube|favicon|ERR_BLOCKED|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
-    await app.open("/");
+    await page.goto("/", { waitUntil: "networkidle" });
+    await ctx.close();
     expect(errors).toEqual([]);
   });
 });

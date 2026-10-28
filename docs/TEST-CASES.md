@@ -1,6 +1,6 @@
 # Test cases and last run
 
-Generated from `evidence/results.json`. Run started 2026-10-28T09:10:22.821Z, 88 s, **115 runs passed, 5 known-issue runs failed as expected, 0 unexpected failures/flaky/skipped.** A known issue is a real defect that still reproduces; it is not a bug-free pass.
+Generated from `evidence/results.json`. Run started 2026-10-28T09:16:53.534Z, 87 s, **115 runs passed, 5 known-issue runs failed as expected, 0 unexpected failures/flaky/skipped.** A known issue is a real defect that still reproduces; it is not a bug-free pass.
 
 Rows marked *known issue* are written as expected failures (`test.fail`) with a bug ID from [BUGS.md](BUGS.md). Playwright reports them as expected failures. When the app is fixed the test starts passing, which Playwright reports as a failure until the annotation is removed.
 
@@ -73,7 +73,7 @@ Rows marked *known issue* are written as expected failures (`test.fail`) with a 
 | NV-04 | Navigation | team profile opens from the teams index | desktop-chrome | pass |
 | NV-05 | Navigation | mobile menu opens and lists navigation | mobile-chrome | pass |
 | NV-06 | Navigation | the app survives an upstream API failure with cached or empty state, not a blank page | desktop-chrome | pass |
-| NV-07 | Navigation | no console errors on the home page | desktop-chrome | expected fail |
+| NV-07 | Navigation | no console errors on the home page for a non-UTC visitor | desktop-chrome | expected fail |
 | PR-01 | Predictor | round 1 shows eight official pairings | desktop-chrome, mobile-chrome | pass |
 | PR-02 | Predictor | picking a winner marks exactly that team as pressed | desktop-chrome | pass |
 | PR-03 | Predictor | predictions persist across reload (browser only) | desktop-chrome | pass |

@@ -1,0 +1,5027 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/pw/worlds-2026-qa/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/tmp/pw/worlds-2026-qa/playwright.config.ts",
+    "rootDir": "/tmp/pw/worlds-2026-qa/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/api",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "desktop-chrome",
+        "name": "desktop-chrome",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "api",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/api",
+        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/api",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://worlds-2026-live.vercel.app",
+          "locale": "en-US",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "launchOptions": {
+            "executablePath": "/usr/bin/google-chrome",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "api"
+      },
+      {
+        "grep": {},
+        "grepInvert": {},
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "desktop-chrome",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://worlds-2026-live.vercel.app",
+          "locale": "en-US",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "launchOptions": {
+            "executablePath": "/usr/bin/google-chrome",
+            "args": [
+              "--no-sandbox"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-chrome"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/pw/worlds-2026-qa/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "mobile-chrome",
+        "testDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "snapshotDir": "/tmp/pw/worlds-2026-qa/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://worlds-2026-live.vercel.app",
+          "locale": "en-US",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "launchOptions": {
+            "executablePath": "/usr/bin/google-chrome",
+            "args": [
+              "--no-sandbox"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+          "viewport": {
+            "width": 412,
+            "height": 839
+          },
+          "screen": {
+            "width": 412,
+            "height": 915
+          },
+          "deviceScaleFactor": 2.625,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "evidence/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api/contract.spec.ts",
+      "file": "api/contract.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API contract and data integrity",
+          "file": "api/contract.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API-01 health endpoint reports a recent successful sync",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 292,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.597Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-01c6444cd698a109f401",
+              "file": "api/contract.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "API-02 snapshot matches the documented schema",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 335,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.454Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-39cb9071a7576897cec3",
+              "file": "api/contract.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "API-03 snapshot supports CORS and conditional requests (ETag)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 466,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.654Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-25878021bcf72241fc60",
+              "file": "api/contract.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "API-04 match data is internally consistent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 114,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.854Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-e4228567bac75629c97c",
+              "file": "api/contract.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "API-05 series formats follow the tournament rules (Swiss Bo1 or Bo3, Play-Ins Bo5)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 137,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.923Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-6669ebf4064dd7a70bdf",
+              "file": "api/contract.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "API-06 calendar feed is a valid iCalendar with one event per match with a known team",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:23.980Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-b7727d3a29efaa1b822d",
+              "file": "api/contract.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "API-07 security headers are set on the HTML shell",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.071Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-232986ea973eb6ca2aeb",
+              "file": "api/contract.spec.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "API-08 protected endpoints reject anonymous callers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 364,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.099Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-65f38e52629a88a991d3",
+              "file": "api/contract.spec.ts",
+              "line": 79,
+              "column": 7
+            },
+            {
+              "title": "API-09 unknown routes return a real 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 292,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.163Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90a218284ea7aefb289c-e33e963b3127aff7ca67",
+              "file": "api/contract.spec.ts",
+              "line": 87,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/negative.spec.ts",
+      "file": "api/negative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API: more positive and negative cases",
+          "file": "api/negative.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API-10 team directory has unique codes and a roster for each team",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 96,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.321Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-3df35d35030fd4173faf",
+              "file": "api/negative.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "API-11 every match references teams that exist in the directory (or TBD)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.426Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-d588448fbd590d5cc481",
+              "file": "api/negative.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "API-12 the snapshot is read-only: POST is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 198,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.480Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-961b8869fc31c4ac28cb",
+              "file": "api/negative.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "API-13 CORS preflight is answered for GET with If-None-Match",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.484Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-5fbcff61c24216278f29",
+              "file": "api/negative.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "API-14 calendar events have a start, a later end and a stable UID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 155,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.538Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-8a42925c4517efdcb3cd",
+              "file": "api/negative.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "API-15 calendar entries do not leak final scores",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 121,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.656Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-254d9564d2d9b4733116",
+              "file": "api/negative.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "API-16 unknown API paths do not expose a stack trace",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 288,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.696Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-36ef850cd84e8596a007",
+              "file": "api/negative.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "API-17 sync endpoint rejects a wrong secret",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.700Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-60789ddf8dbb9c3c55f8",
+              "file": "api/negative.spec.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "API-18 robots and sitemap are served",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 275,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-52374bfd93939ff853fa",
+              "file": "api/negative.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "API-19 web manifest is valid for installation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 73,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:24.871Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "30cfb1659f62e12e73c6-64a33e6998b5c17c8278",
+              "file": "api/negative.spec.ts",
+              "line": 70,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/filters-and-pages.spec.ts",
+      "file": "e2e/filters-and-pages.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Match filters: positive paths",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "MC-10 each status filter shows only that status and its count matches the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4652,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:25.319Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-10 completed",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-d5e12--its-count-matches-the-list-desktop-chrome/attachments/MC-10-completed-d6bce0c27049a4cf930aff8c0a03d382029330e8.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-a4cbbb25a5dea1fdc53c",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "MC-11 date filter keeps only that day",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3050,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:25.542Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-11",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-86e32--filter-keeps-only-that-day-desktop-chrome/attachments/MC-11-6774328625ec9d18cd9aa3bc56022151a78fb404.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-6cf80c61be1a116dd50d",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "MC-12 region filter returns only series with a team from that region",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3198,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:25.679Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-12",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-afc22-ith-a-team-from-that-region-desktop-chrome/attachments/MC-12-9d0b5061fc7ab0be8a69a45a0a5aae57f997c707.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-0a67c1fb3414d0e368f5",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "MC-13 calendar view switch is reflected in the URL and keeps the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3153,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:29.124Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-13",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-fbf25--the-URL-and-keeps-the-list-desktop-chrome/attachments/MC-13-7be1b0a51995e4897804c254e70ed81e059ff4af.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-ace08989937a363c9ac6",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "MC-14 combined stage and team filters narrow together",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2942,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:29.371Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-b06176898251ad43774b",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 55,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Match filters: negative and edge paths",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 68,
+          "column": 6,
+          "specs": [
+            {
+              "title": "NG-01 a date with no matches shows guidance, not a blank page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:30.414Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NG-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-799af-s-guidance-not-a-blank-page-desktop-chrome/attachments/NG-01-7ae931bc7cf8ff8cabc42da5f3d46e892288fb8d.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-d923a58feab10347cdbe",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "NG-02 an unknown stage in the URL does not crash the page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1938,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:32.326Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-867322d3df07ada93083",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 76,
+              "column": 7
+            },
+            {
+              "title": "NG-03 a malformed date in the URL does not crash the page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1932,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:32.357Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-9d329b3635eb21b9fd25",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "NG-04 markup typed into search is shown as text and never executed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2928,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:32.410Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-cb5e62b9404308391942",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 91,
+              "column": 7
+            },
+            {
+              "title": "NG-05 a very long search string is handled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2899,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:34.284Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-acc1a034dbcaf64bd881",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 99,
+              "column": 7
+            },
+            {
+              "title": "NG-06 My teams with nothing followed shows an empty state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2752,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:34.314Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-21923b82c256b6abf7d6",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 106,
+              "column": 7
+            },
+            {
+              "title": "NG-07 an unknown team code returns a real 404 page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 895,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:35.369Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NG-07",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-f9bc9-ode-returns-a-real-404-page-desktop-chrome/attachments/NG-07-9362eff574cfdfeeacb1ec16ab68c513460a549d.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-5d67e28ebe97db6d3cca",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 113,
+              "column": 7
+            },
+            {
+              "title": "NG-08 corrupted saved preferences fall back to defaults",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1606,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:36.312Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-c60b436462a31785d951",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 120,
+              "column": 7
+            },
+            {
+              "title": "NG-09 an unknown saved language falls back without showing raw translation keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2475,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:37.089Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-439bb9c5d4ae4901ec38",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 127,
+              "column": 7
+            },
+            {
+              "title": "NG-10 an unknown saved time zone still renders kickoff times (known issue BUG-005)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-005 unknown saved time zone crashes the app into the error boundary",
+                      "location": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                        "line": 135,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 12512,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n    at /tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts:137:39",
+                        "location": {
+                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                          "column": 39,
+                          "line": 137
+                        },
+                        "snippet": "  135 |     test.fail(true, \"BUG-005 unknown saved time zone crashes the app into the error boundary\");\n  136 |     await app.open(\"/matches\", { tz: \"Mars/Olympus\", tzSet: true });\n> 137 |     await expect(cards(page).first()).toBeVisible();\n      |                                       ^\n  138 |     await expect(cards(page).first()).toContainText(/\\d{2}:\\d{2}/);\n  139 |   });\n  140 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                            "column": 39,
+                            "line": 137
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('a[href^=\"/matches/\"]').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('a[href^=\"/matches/\"]').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a[href^=\"/matches/\"]').first()\u001b[22m\n\n\n  135 |     test.fail(true, \"BUG-005 unknown saved time zone crashes the app into the error boundary\");\n  136 |     await app.open(\"/matches\", { tz: \"Mars/Olympus\", tzSet: true });\n> 137 |     await expect(cards(page).first()).toBeVisible();\n      |                                       ^\n  138 |     await expect(cards(page).first()).toContainText(/\\d{2}:\\d{2}/);\n  139 |   });\n  140 | });\n    at /tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts:137:39"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:37.195Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-005 unknown saved time zone crashes the app into the error boundary",
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                            "line": 135,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/filters-and-pages-Match-fi-73ee0--times-known-issue-BUG-005--desktop-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/filters-and-pages.spec.ts",
+                        "column": 39,
+                        "line": 137
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-c81bd24046b077206e99",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 134,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Every public route renders",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 158,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RT-01 / responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1224,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:37.937Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-0718872c5c594041e304",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-02 /matches responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 953,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:39.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-0620c3fc9822edf98cc3",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-03 /standings responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1072,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:39.574Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-f72d92270197ab4b88cd",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-04 /predictor responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1018,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:40.194Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-c52fcaeac616871b6e61",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-05 /teams responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1112,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:40.659Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-e4a331f8ee7db63ab96c",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-06 /teams/T1 responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1117,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:41.249Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-e1b802c1b569028ee578",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-07 /today responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 953,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:41.810Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-a99e6601cd5ab63be8e9",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-08 /about responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 991,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:42.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-98c537de91bf9972f3b1",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-09 /compare responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:42.778Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-95de3caa615bd8f0549e",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-10 /daily responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1017,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:43.407Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-0341e5d6e249d815bf35",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-11 /groups responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 982,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:43.618Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-79aeb8f185cbd5259b83",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-12 /recaps responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1134,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:44.441Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-21b9c954b1b8ea953492",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-13 /stats responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1020,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:44.624Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-ee9e4a34da5d54954a9b",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            },
+            {
+              "title": "RT-14 /predictions responds 200 with its heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 975,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:45.599Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-aa55b2e40fa0c5fac44d",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 160,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Each language loads",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 170,
+          "column": 6,
+          "specs": [
+            {
+              "title": "LG-03 Bahasa Indonesia sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1891,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:45.664Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-e7a456b2a691d8e74c71",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-04 Bahasa Melayu sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1659,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:46.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-add506b8519afac2b886",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-05 日本語 sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1815,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:47.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-c168bbcab61c825625c9",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-06 한국어 sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1989,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:48.276Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-c9c15cd55548163c72b1",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-07 中文 sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:49.406Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-748e0ea99fdea5c5e776",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-08 Français sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2321,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:49.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-e6be1b4f18aa6865506f",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-09 Español sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2342,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:50.271Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-e8fc1176b65b0c56d2bd",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            },
+            {
+              "title": "LG-10 Português sets the document language and shows no raw keys",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2519,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:51.748Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-8822b907b02fedaa7ef5",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 172,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Each time zone option",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 182,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TZ-03 WITA (Makassar) labels kickoff times and is stored as Asia/Makassar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2461,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:52.054Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-147577e018538208de64",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-04 WIT (Jayapura) labels kickoff times and is stored as Asia/Jayapura",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2728,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:52.623Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-66dc16705b23d923b5c2",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-05 SGT (Singapore) labels kickoff times and is stored as Asia/Singapore",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2335,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:54.279Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-b1b67f919710d19688cb",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-06 KST (Seoul) labels kickoff times and is stored as Asia/Seoul",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:54.554Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-92a52cb46ea91d57939a",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-07 UTC labels kickoff times and is stored as UTC",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2549,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:55.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-a51855e2663a36909c3e",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-08 ET (New York) labels kickoff times and is stored as America/New_York",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2583,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:56.627Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-6289b1c681a8175e2286",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-09 PT (Los Angeles) labels kickoff times and is stored as America/Los_Angeles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2468,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:57.012Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-edd5d1a2b63948b94f70",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 184,
+              "column": 9
+            },
+            {
+              "title": "TZ-10 Los Angeles is 14 hours behind Jakarta for an October kickoff",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2512,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:57.927Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-14ad13704d46b5df9263",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 194,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Keyboard and dialogs",
+          "file": "e2e/filters-and-pages.spec.ts",
+          "line": 207,
+          "column": 6,
+          "specs": [
+            {
+              "title": "KB-01 the skip link is the first tab stop and moves focus to the content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2836,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:59.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-efd1d07c0e5e6780a2f0",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 208,
+              "column": 7
+            },
+            {
+              "title": "KB-02 Escape closes the settings dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2589,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:10:59.488Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-105465ff1c7ee6b0361a",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 217,
+              "column": 7
+            },
+            {
+              "title": "KB-03 the search palette finds nothing for gibberish and stays usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2929,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:00.468Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d19dc058d742d8fe1c1-907fb1f0e2989bf98bed",
+              "file": "e2e/filters-and-pages.spec.ts",
+              "line": 226,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/matches.spec.ts",
+      "file": "e2e/matches.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Match center",
+          "file": "e2e/matches.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "MC-01 lists every series and shows a count @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2452,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:02.085Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-desktop-chrome/attachments/MC-01-bdda25e016628061a0eaa204b3eac8515bd5cfd0.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-5ecbe4da01ae672f8602",
+              "file": "e2e/matches.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "MC-02 stage filter narrows the list and is reflected in the URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2999,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:02.130Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-02",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-02-b0957-and-is-reflected-in-the-URL-desktop-chrome/attachments/MC-02-7283df8d83b43876f3bb9332d22b965db267ea32.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-d9165e984928f6fc6d33",
+              "file": "e2e/matches.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "MC-03 filtered views can be shared by URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2974,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:03.422Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-0f2b483addc8f716007c",
+              "file": "e2e/matches.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "MC-04 team search finds only that team's series",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2734,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:04.550Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-04",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-04-abb90-nds-only-that-team-s-series-desktop-chrome/attachments/MC-04-5b3fdb0a134efac6f7f81a0c1d461cfc80b204aa.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-a75f9dc0cc378a5ac5f6",
+              "file": "e2e/matches.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "MC-05 a search with no result shows an empty count instead of a crash",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:05.165Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-0f8e7c3e7ed61097e41f",
+              "file": "e2e/matches.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "MC-06 reset restores the full list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2382,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:06.452Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-d63f71c0c3e9f894335e",
+              "file": "e2e/matches.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "MC-07 a series opens its detail page with both teams",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2935,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:07.324Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-07",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-07-a9a95-detail-page-with-both-teams-desktop-chrome/attachments/MC-07-5a0263cd96b600fbe3c0c23e8d8fd349eaceadc8.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-4c555d684c204c7d3295",
+              "file": "e2e/matches.spec.ts",
+              "line": 63,
+              "column": 7
+            },
+            {
+              "title": "MC-08 invalid match id shows a not-found message with a way back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1102,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:07.678Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-fb8e747c497c24f5a9a3",
+              "file": "e2e/matches.spec.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "MC-08b invalid match id responds with HTTP 404 (known issue BUG-002)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-002 soft 404 on /matches/<unknown id>",
+                      "location": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                        "line": 82,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 1205,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts:84:27",
+                        "location": {
+                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                          "column": 27,
+                          "line": 84
+                        },
+                        "snippet": "  82 |     test.fail(true, \"BUG-002 soft 404 on /matches/<unknown id>\");\n  83 |     const res = await page.goto(\"/matches/000\");\n> 84 |     expect(res?.status()).toBe(404);\n     |                           ^\n  85 |   });\n  86 |\n  87 |   test(\"MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only\", async ({ page, app }, info) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                            "column": 27,
+                            "line": 84
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  82 |     test.fail(true, \"BUG-002 soft 404 on /matches/<unknown id>\");\n  83 |     const res = await page.goto(\"/matches/000\");\n> 84 |     expect(res?.status()).toBe(404);\n     |                           ^\n  85 |   });\n  86 |\n  87 |   test(\"MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only\", async ({ page, app }, info) => {\n    at /tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts:84:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:08.787Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-002 soft 404 on /matches/<unknown id>",
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                            "line": 82,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-08-99115-TP-404-known-issue-BUG-002--desktop-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/matches.spec.ts",
+                        "column": 27,
+                        "line": 84
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-a6f4116dbe3d1e2c435c",
+              "file": "e2e/matches.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "MC-01 lists every series and shows a count @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3076,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:44.078Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-01-51cfd--shows-a-count-smoke-mobile-mobile-chrome/attachments/MC-01-229c5305c926d8f763647ca8e1eda5cbc1d00c0d.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-5039a1bfd13586b6b2d8",
+              "file": "e2e/matches.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "MC-09 match list has no horizontal overflow on a phone @mobile @mobile-only",
+              "ok": true,
+              "tags": [
+                "mobile",
+                "mobile-only"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2894,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:44.386Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "MC-09",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Match-center-MC-09-3da6b--a-phone-mobile-mobile-only-mobile-chrome/attachments/MC-09-a730f6c8a40534bfba31963feb51112a6a8b25bb.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-d3b111042da654926ca8",
+              "file": "e2e/matches.spec.ts",
+              "line": 87,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Preferences",
+          "file": "e2e/matches.spec.ts",
+          "line": 95,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TZ-01 changing the time zone shifts every kickoff time consistently",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2810,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:08.845Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "TZ-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Preferences-TZ-01--de07b-y-kickoff-time-consistently-desktop-chrome/attachments/TZ-01-9112f69a9c45d367b1b8596735dca3ba8d8a4bf4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-1794bf4339a00ea236dc",
+              "file": "e2e/matches.spec.ts",
+              "line": 96,
+              "column": 7
+            },
+            {
+              "title": "TZ-02 the chosen time zone survives a reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3694,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:10.021Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-e24e0103a305b506dc27",
+              "file": "e2e/matches.spec.ts",
+              "line": 113,
+              "column": 7
+            },
+            {
+              "title": "LG-01 switching language translates the interface and persists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3850,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:10.275Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "LG-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/matches-Preferences-LG-01--2411d--the-interface-and-persists-desktop-chrome/attachments/LG-01-cf550d93d97a507a5de64555c6f39dced3c4a5ab.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-72e29ff84efa2648f38a",
+              "file": "e2e/matches.spec.ts",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "LG-02 team names are not translated",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2106,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:11.667Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbf22a2d1b9f5183e0ce-28d217cad008926a315d",
+              "file": "e2e/matches.spec.ts",
+              "line": 133,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/predictor.spec.ts",
+      "file": "e2e/predictor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Swiss predictor",
+          "file": "e2e/predictor.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PR-01 round 1 shows eight official pairings @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2147,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:13.742Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "PR-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-desktop-chrome/attachments/PR-01-ebb9fc2d0ef4255dba0f8b630eb9811ffb7266f4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-91569e40e7f10f2d846b",
+              "file": "e2e/predictor.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "PR-02 picking a winner marks exactly that team as pressed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2564,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:13.787Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "PR-02",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f79a0-xactly-that-team-as-pressed-desktop-chrome/attachments/PR-02-db01b87c95e0815174f6b2591a5f5fdbe1aa9cfe.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-369f07887b861dc5b9ae",
+              "file": "e2e/predictor.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "PR-03 predictions persist across reload (browser only)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:14.170Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-8ec37affbe2875672629",
+              "file": "e2e/predictor.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "PR-04 reset asks for confirmation and clears picks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2626,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:15.900Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "PR-04",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--9f5b9-nfirmation-and-clears-picks-desktop-chrome/attachments/PR-04-e0c90d360e5bd69d74c688c72606f8823207aa14.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-2a9993fce3b61b2df310",
+              "file": "e2e/predictor.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "PR-05 dismissing the reset dialog keeps the picks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2231,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:16.370Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-e43edc9c0f314c26d581",
+              "file": "e2e/predictor.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "PR-06 later rounds are built from official pairings, not from picks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1729,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:17.539Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-6d895c974e640f5f69e1",
+              "file": "e2e/predictor.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "PR-07 knockout tab shows the three knockout rounds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2009,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:18.548Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "PR-07",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--6210a-s-the-three-knockout-rounds-desktop-chrome/attachments/PR-07-4ca95a9341454ed8a5fde481eb844263aee236d9.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-19023f2711d2e95b0eff",
+              "file": "e2e/predictor.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "PR-08 picks never write to the shared database (local only)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2762,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:18.607Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-b826c83df37fd994f731",
+              "file": "e2e/predictor.spec.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "PR-01 round 1 shows eight official pairings @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3039,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:46.677Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "PR-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/predictor-Swiss-predictor--f5160-icial-pairings-smoke-mobile-mobile-chrome/attachments/PR-01-0aafd580f5eef9b86027edae80d6ea9c3521387f.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-f78e466d9ee8e1529144",
+              "file": "e2e/predictor.spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Swiss predictor: more behaviour",
+          "file": "e2e/predictor.spec.ts",
+          "line": 84,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PR-09 clicking a chosen winner again clears the pick",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1706,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:19.289Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-200da1435f1fd84a7dc1",
+              "file": "e2e/predictor.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "PR-10 official pairings cannot be removed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1699,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:20.579Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-f23ff418c1e6c40f8499",
+              "file": "e2e/predictor.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "PR-11 knockout slots without teams cannot be picked",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1841,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:21.004Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0a877c70cc231a97c26-d2d6ce70bb9347450f59",
+              "file": "e2e/predictor.spec.ts",
+              "line": 100,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/spoiler.spec.ts",
+      "file": "e2e/spoiler.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Spoiler-free mode",
+          "file": "e2e/spoiler.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SP-01 results are visible by default and nothing asks to be revealed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:21.382Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "SP-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--d270c-nothing-asks-to-be-revealed-desktop-chrome/attachments/SP-01-0ba038d7897fc76e6cc1fd525740f05536fe6cf3.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-6a0d95c7d580d4bc7b4d",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "SP-02 enabling spoiler-free hides scores and offers a per-match reveal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:22.298Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "SP-02",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--3cc39-d-offers-a-per-match-reveal-desktop-chrome/attachments/SP-02-37d06f99cd74325c00180155be5efd5f8b4439f5.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-bdf14e17550b2a019788",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "SP-03 the setting persists after reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3069,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:22.857Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-976f7f438f6f95b21852",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "SP-04 revealing one match leaves every other match hidden",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2362,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:23.705Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "SP-04",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--19675-es-every-other-match-hidden-desktop-chrome/attachments/SP-04-f5b717b37d987cccdba3511fa4909a1988775487.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-98005f36d49f12e6a73f",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "SP-05 a revealed match stays revealed after reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2938,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:24.746Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-4569be7927fc497de0f3",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "SP-06 the standings page hides results and can be shown for the session only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2906,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:25.939Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "SP-06 hidden",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-hidden-c2dab9e96a7bc825bce731f6fb46d81116cc6bb7.png"
+                        },
+                        {
+                          "name": "SP-06 shown",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--58321--shown-for-the-session-only-desktop-chrome/attachments/SP-06-shown-7128130f4ab4bc475e4a7fcc04c68560e7cb9830.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-ddfa59aafcbeba14aa04",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "SP-07 turning spoiler-free off restores scores",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2471,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:26.074Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-318064874e668c1bb1ff",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "SP-08 the match detail page does not leak the result when spoiler-free is on",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:27.694Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "SP-08",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--35aa7-ult-when-spoiler-free-is-on-desktop-chrome/attachments/SP-08-0a35705a34687067e3f743cc276ca9cfb9c9e383.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-2f183c9853242e15079b",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 80,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Spoiler-free mode: first paint",
+          "file": "e2e/spoiler.spec.ts",
+          "line": 92,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SP-09 scores are never painted while spoiler-free is on (known issue BUG-004)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-004 flash of scores before spoiler-free applies",
+                      "location": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                        "line": 95,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3203,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts:108:69",
+                        "location": {
+                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                          "column": 69,
+                          "line": 108
+                        },
+                        "snippet": "  106 |     await page.goto(\"/matches\", { waitUntil: \"networkidle\" });\n  107 |     await page.waitForTimeout(800);\n> 108 |     expect(await page.evaluate(() => (window as any).__leakFrames)).toBe(0);\n      |                                                                     ^\n  109 |   });\n  110 | });\n  111 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                            "column": 69,
+                            "line": 108
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n\n  106 |     await page.goto(\"/matches\", { waitUntil: \"networkidle\" });\n  107 |     await page.waitForTimeout(800);\n> 108 |     expect(await page.evaluate(() => (window as any).__leakFrames)).toBe(0);\n      |                                                                     ^\n  109 |   });\n  110 | });\n  111 |\n    at /tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts:108:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:28.556Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-004 flash of scores before spoiler-free applies",
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                            "line": 95,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/spoiler-Spoiler-free-mode--d4f51--is-on-known-issue-BUG-004--desktop-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/spoiler.spec.ts",
+                        "column": 69,
+                        "line": 108
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "557256bfa97e30cb2843-656ea37d872475ac65b6",
+              "file": "e2e/spoiler.spec.ts",
+              "line": 94,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/standings-nav.spec.ts",
+      "file": "e2e/standings-nav.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Standings and bracket",
+          "file": "e2e/standings-nav.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ST-01 standings page renders stage tabs @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2085,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:29.044Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "ST-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-desktop-chrome/attachments/ST-01-a7e1351f9bd1b799d75a62b8c2db74a3169da0ff.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-9b848c8f7f0e08ed893b",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ST-02 Swiss view shows the bracket and the record board",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2234,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:30.370Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "ST-02",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-063ac-racket-and-the-record-board-desktop-chrome/attachments/ST-02-710f5febe58bf750fc2b070466179a79ba255c89.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-51bbcdaa0307addd4386",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "ST-03 Swiss record board only has legal records",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2070,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:31.139Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-fd889317229b88af16ec",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "ST-04 Knockouts view renders without error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2310,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:31.830Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "ST-04",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-21688--view-renders-without-error-desktop-chrome/attachments/ST-04-6d2b8b32606d494394f4719ad4e4975b28331c4c.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-f884a16d4e8a55e7f931",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "ST-05 zoom controls change the bracket scale within limits",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3417,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:32.633Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-24c7f0b03227a67f683a",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "ST-01 standings page renders stage tabs @smoke @mobile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:47.540Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "ST-01",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Standings-an-d98f6-ers-stage-tabs-smoke-mobile-mobile-chrome/attachments/ST-01-9353956bc28d007a7642ee810cb91fe31a42dc34.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-0b3e6aa0b6d99afc153c",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Navigation, search and resilience",
+          "file": "e2e/standings-nav.spec.ts",
+          "line": 47,
+          "column": 6,
+          "specs": [
+            {
+              "title": "NV-01 primary navigation reaches the main sections @smoke",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2151,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:33.218Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-23c419a25d671167944c",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "NV-02 command palette opens with Ctrl+K and finds a team",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:34.148Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NV-02",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-54a44-ith-Ctrl-K-and-finds-a-team-desktop-chrome/attachments/NV-02-14ffa2e92d1d3e5949714b4bdc4b77ac19a7bd80.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-eebcc247ed68b5cf6680",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "NV-03 unknown page shows the branded 404 with a way back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1451,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:35.377Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NV-03",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-86e5d-branded-404-with-a-way-back-desktop-chrome/attachments/NV-03-37833bbc2f4e6babb0704e12965ddf7aa34ba816.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-1d94d63171ba6607b8a5",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 69,
+              "column": 7
+            },
+            {
+              "title": "NV-04 team profile opens from the teams index",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2787,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:36.057Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NV-04",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-d8212--opens-from-the-teams-index-desktop-chrome/attachments/NV-04-aab227b0802f9c72241960350996319dff9fc240.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-1e45cc89c1c985158b0b",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 76,
+              "column": 7
+            },
+            {
+              "title": "NV-06 the app survives an upstream API failure with cached or empty state, not a blank page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2417,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:36.841Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NV-06",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-922e1-mpty-state-not-a-blank-page-desktop-chrome/attachments/NV-06-f3b6b0dcfe06c3b4f47a2febc3ad50a2d89e245f.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-8cb40d79dcfd4c3fb47a",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 93,
+              "column": 7
+            },
+            {
+              "title": "NV-07 no console errors on the home page (known issue BUG-001)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-001 React hydration error #418 on /",
+                      "location": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "line": 103,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2271,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:108:20",
+                        "location": {
+                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                          "column": 20,
+                          "line": 108
+                        },
+                        "snippet": "  106 |     page.on(\"console\", (m) => { if (m.type() === \"error\" && !/youtube|favicon|ERR_BLOCKED|Failed to load resource/i.test(m.text())) errors.push(m.text()); });\n  107 |     await app.open(\"/\");\n> 108 |     expect(errors).toEqual([]);\n      |                    ^\n  109 |   });\n  110 | });\n  111 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "column": 20,
+                            "line": 108
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  106 |     page.on(\"console\", (m) => { if (m.type() === \"error\" && !/youtube|favicon|ERR_BLOCKED|Failed to load resource/i.test(m.text())) errors.push(m.text()); });\n  107 |     await app.open(\"/\");\n> 108 |     expect(errors).toEqual([]);\n      |                    ^\n  109 |   });\n  110 | });\n  111 |\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:108:20"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:37.327Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-001 React hydration error #418 on /",
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "line": 103,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-34e61-e-page-known-issue-BUG-001--desktop-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "column": 20,
+                        "line": 108
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-5f1d1eda26d38c4dd30f",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "NV-05 mobile menu opens and lists navigation @mobile @mobile-only",
+              "ok": true,
+              "tags": [
+                "mobile",
+                "mobile-only"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2621,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:47.864Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "NV-05",
+                          "contentType": "image/png",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Navigation-s-08b78-vigation-mobile-mobile-only-mobile-chrome/attachments/NV-05-76b36c13ed63c1de11a85c6f278c1bf37476003d.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-48d07a4c098676def717",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 86,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Accessibility (axe-core, WCAG 2 A/AA)",
+          "file": "e2e/standings-nav.spec.ts",
+          "line": 112,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AX-01 / has no serious or critical violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3542,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:38.852Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "AX-01-axe.json",
+                          "contentType": "application/json",
+                          "body": "W10="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-810cc65dc6ffcb9130bf",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 114,
+              "column": 9
+            },
+            {
+              "title": "AX-02 /matches has no serious or critical violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4533,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:39.271Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "AX-02-axe.json",
+                          "contentType": "application/json",
+                          "body": "W10="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-806550968bd767a7496c",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 114,
+              "column": 9
+            },
+            {
+              "title": "AX-03 /standings has no serious or critical violations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3865,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:39.616Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "AX-03-axe.json",
+                          "contentType": "application/json",
+                          "body": "W10="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-a58e10c8fc29babc48a6",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 114,
+              "column": 9
+            },
+            {
+              "title": "AX-04 /predictor has no serious or critical violations (known issue BUG-003)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-003 alert text contrast 4.45:1 (needs 4.5:1)",
+                      "location": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "line": 115,
+                        "column": 39
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 3834,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:120:80",
+                        "location": {
+                          "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                          "column": 80,
+                          "line": 120
+                        },
+                        "snippet": "  118 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  119 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 120 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  121 |     });\n  122 |   }\n  123 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "column": 80,
+                            "line": 120
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"color-contrast (serious): 1 nodes\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  118 |       const bad = results.violations.filter((v) => [\"serious\", \"critical\"].includes(v.impact ?? \"\"));\n  119 |       await info.attach(`${id}-axe.json`, { body: JSON.stringify(results.violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })), null, 2), contentType: \"application/json\" });\n> 120 |       expect(bad.map((v) => `${v.id} (${v.impact}): ${v.nodes.length} nodes`)).toEqual([]);\n      |                                                                                ^\n  121 |     });\n  122 |   }\n  123 | });\n    at /tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts:120:80"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-28T09:11:42.413Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-003 alert text contrast 4.45:1 (needs 4.5:1)",
+                          "location": {
+                            "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                            "line": 115,
+                            "column": 39
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "AX-04-axe.json",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgIm5vZGVzIjogMSwKICAgICJoZWxwIjogIkVsZW1lbnRzIG11c3QgbWVldCBtaW5pbXVtIGNvbG9yIGNvbnRyYXN0IHJhdGlvIHRocmVzaG9sZHMiCiAgfQpd"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/tmp/pw/worlds-2026-qa/test-results/standings-nav-Accessibilit-a53fd-ations-known-issue-BUG-003--desktop-chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/tmp/pw/worlds-2026-qa/tests/e2e/standings-nav.spec.ts",
+                        "column": 80,
+                        "line": 120
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d2adf2fb9abc6e62e978-1391baf37a99b5d4db1a",
+              "file": "e2e/standings-nav.spec.ts",
+              "line": 114,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T09:10:22.821Z",
+    "duration": 87769.612,
+    "expected": 120,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

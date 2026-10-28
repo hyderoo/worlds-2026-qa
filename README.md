@@ -11,7 +11,7 @@ Automated end-to-end and API test suite for **Worlds 2026 Live**, a League of Le
 | API contract | health freshness, snapshot schema (zod), ETag and CORS, data invariants (a Bo5 winner has 3 wins), calendar feed validity and no score leaks, security headers, rejected anonymous sync |
 | Match center | status, stage, region, date and team filters, URL sharing, empty states, markup typed into search stays inert |
 | Spoiler-free mode | hidden scores, per-match reveal, persistence, session-only reveal, detail page, first paint |
-| Time zones and languages | every zone and every language, offset arithmetic (Jakarta to Los Angeles = 14 h), bad saved values |
+| Time zones and languages | every time zone and all 9 languages (English as the baseline, the 8 others each loaded and checked), offset arithmetic (Jakarta to Los Angeles = 14 h), bad saved values |
 | Swiss predictor | picks, toggling, persistence, reset confirm/dismiss, no network writes, locked knockout slots |
 | Standings | Swiss board legality, tab state, zoom limits |
 | Accessibility and keyboard | axe-core WCAG 2 A/AA on four pages, skip link, Escape, search palette |
@@ -55,7 +55,7 @@ tests/e2e            browser cases by feature
 tests/support        fixtures, seeded preferences, zod schemas, evidence helper
 docs                 test plan, generated case table, bug list
 evidence             JSON and JUnit results, screenshots from the last run
-.github/workflows    CI (push, PR, every 6 hours, manual)
+.github/workflows    CI (push, pull request, manual)
 ```
 
 ## Screenshots
